@@ -1,0 +1,4 @@
+/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug
