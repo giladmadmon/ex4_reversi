@@ -1,4 +1,4 @@
-# Install script for directory: /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server
+# Install script for directory: /home/gilad/CLionProjects/Task_04_Final/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

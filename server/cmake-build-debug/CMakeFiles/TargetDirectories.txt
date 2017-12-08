@@ -1,3 +1,0 @@
-/home/dafnamagid/CLionProjects/ex04/ex4_reversi-server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dafnamagid/CLionProjects/ex04/ex4_reversi-server/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/dafnamagid/CLionProjects/ex04/ex4_reversi-server/cmake-build-debug/CMakeFiles/Task_04.dir

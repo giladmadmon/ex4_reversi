@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Task_04_Server.dir/main.cpp.o"
   "CMakeFiles/Task_04_Server.dir/Server.cpp.o"
+  "CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o"
   "Task_04_Server.pdb"
   "Task_04_Server"
 )

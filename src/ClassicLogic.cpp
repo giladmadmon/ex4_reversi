@@ -67,12 +67,14 @@ vector<vector<int> > ClassicLogic::CheckAllDirections(PlayerColor rival_color, i
 
   return possible_directions;
 }
+
 bool ClassicLogic::GameOver(Board &board) {
   vector<Position> black_moves = PossibleMoves(Black, board);
   vector<Position> white_moves = PossibleMoves(White, board);
 
   return black_moves.empty() && white_moves.empty();
 }
+
 bool ClassicLogic::CheckOneDirection(PlayerColor rival_color,
                                      int row,
                                      int col,

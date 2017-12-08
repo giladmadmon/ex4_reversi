@@ -13,6 +13,7 @@
 #include <iostream>
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
+#define BUFFER_SIZE 7
 
 Server::Server(int port) : port(port), serverSocket(0) {
   cout << "server" << endl;
@@ -38,7 +39,7 @@ void Server::Start() {
 
 }
 
-void Server::Play(){
+void Server::Play() {
   int n, firstClientSocket, secondClientSocket;
 
   while (true) {
@@ -140,6 +141,7 @@ GameStatus Server::PlayOneTurn(int currentClient, int otherClient) {
     status = NO_MOVE;
   } else if (strcmp(reinterpret_cast<const char *>(&msg), "End") == 0) {
     status = GAME_ENDED;
+    write(currentClient, &msg, sizeof(msg));
   } else {
     status = PLAYING;
   }

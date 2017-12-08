@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googletest/src/gtest_main.cc" "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+  "/home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googletest/src/gtest_main.cc" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

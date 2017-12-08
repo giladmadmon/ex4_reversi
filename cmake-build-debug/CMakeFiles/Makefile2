@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client
+CMAKE_SOURCE_DIR = /home/gilad/CLionProjects/Task_04_Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Task_04_Tests.dir
@@ -68,7 +68,7 @@ CMakeFiles/Task_04_Tests.dir/all: gtest_src/googletest-release-1.8.0/googlemock/
 CMakeFiles/Task_04_Tests.dir/all: gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/depend
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target Task_04_Tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target Task_04_Tests"
 .PHONY : CMakeFiles/Task_04_Tests.dir/all
 
 # Include target in all.
@@ -78,9 +78,9 @@ all: CMakeFiles/Task_04_Tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Task_04_Tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Task_04_Tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Task_04_Tests.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ clean: CMakeFiles/Task_04_Tests.dir/clean
 CMakeFiles/Task_04.dir/all:
 	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/depend
 	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Task_04"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Task_04"
 .PHONY : CMakeFiles/Task_04.dir/all
 
 # Include target in all.
@@ -115,9 +115,9 @@ all: CMakeFiles/Task_04.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Task_04.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Task_04.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Task_04.dir/rule
 
 # Convenience name for target.
@@ -160,7 +160,7 @@ server/preinstall:
 server/CMakeFiles/Task_04_Server.dir/all:
 	$(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/depend
 	$(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target Task_04_Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17 "Built target Task_04_Server"
 .PHONY : server/CMakeFiles/Task_04_Server.dir/all
 
 # Include target in all.
@@ -170,9 +170,9 @@ all: server/CMakeFiles/Task_04_Server.dir/all
 
 # Build rule for subdir invocation for target.
 server/CMakeFiles/Task_04_Server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/Task_04_Server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : server/CMakeFiles/Task_04_Server.dir/rule
 
 # Convenience name for target.
@@ -237,7 +237,7 @@ gtest_src/googletest-release-1.8.0/googlemock/preinstall: gtest_src/googletest-r
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=36,37,38,39 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=37,38,39,40 "Built target gmock_main"
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -247,9 +247,9 @@ all: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -274,7 +274,7 @@ clean: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/c
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=33,34,35 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=34,35,36 "Built target gmock"
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -284,9 +284,9 @@ all: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -331,7 +331,7 @@ gtest_src/googletest-release-1.8.0/googlemock/gtest/preinstall:
 gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=42,43 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target gtest_main"
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
@@ -341,9 +341,9 @@ all: gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.d
 
 # Build rule for subdir invocation for target.
 gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -368,7 +368,7 @@ clean: gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main
 gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=40,41 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target gtest"
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -378,9 +378,9 @@ all: gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/al
 
 # Build rule for subdir invocation for target.
 gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.

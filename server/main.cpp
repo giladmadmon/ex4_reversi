@@ -5,11 +5,16 @@
 **************/
 
 #include "Server.h"
-#include <iostream>
+#include "../include/ConfigParser.h"
 #include <stdlib.h>
 using namespace std;
 int main() {
-  Server server(8001);
+  string file_name = "../";
+  file_name += CONFIG_FILE_NAME;
+  ConfigParser config_parser(file_name);
+
+  Server server(config_parser.GetPort());
+
   try {
     server.Start();
     server.Play();

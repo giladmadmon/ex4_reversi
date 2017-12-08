@@ -5,50 +5,54 @@
 **************/
 #include  <iostream>
 #include <fstream>
-#include "../include/HumanPlayer.h"
-
-int const Bufsize=20;
-
-#define MAX_OPTION 3
-#define MIN_OPTION 1
-#define IP_LENGTH 16
-#define PORT_LENGTH 6
-
+#include <cstdlib>
+#include <string.h>
 #include "../include/ConfigParser.h"
+using namespace std;
 
-void GetConfig(char &ip_add[], char &port[], string file_name) {
-    vector<char> v;
-    int ip_index = 0;
-    int port_index = 0;
+#define IP_DEF "ip:"
+#define PORT_DEF "port:"
 
-    ifstream in_file_stream("config_file.txt");
-    char c;
-    while (in_file_stream.get(c)) {
+ConfigParser::ConfigParser(string file_name) {
+  file_name_ = file_name;
+  ip_address_ = "";
+  port_ = -1;
 
-        v.push_back(c);
-        cout << c;// loop getting single characters
-        if (in_file_stream.eof())                      // check for EOF
-            cout << "EoF reached" << endl;
-        else
-            cout << "error reading" << endl;
-    }
+  ParseFile();
+}
 
-    bool IP_ended = false;
-    for (vector<char>::iterator it = v.begin() ; it != v.end(); ++it){
+int ConfigParser::ParseFile() {
+  string line;
 
-        if((char) it.base() == (char) " "){
-            IP_ended = true;
-        }
-        if(!IP_ended){
-            ip_add[ip_index] = (char) it.base();
-            ip_index++;
-        } else {
-            port[port_index] = (char) it.base();
-            port_index++;
-        }
-    }
-    ////  "127.0.0.1", 8001
+  ifstream config_file((file_name_).c_str());
+  if (config_file == NULL) {
+    throw "Configuration file does not exist.";
+  }
 
-    // closing the file
-    in_file_stream.close();
+  while (getline(config_file, line)) {
+    ParseLine(line);
+  }
+}
+
+void ConfigParser::ParseLine(const string &line) {
+  ParseDefinition(IP_DEF, line, ip_address_);
+  ParseDefinition(PORT_DEF, line, port_);
+}
+
+void ConfigParser::ParseDefinition(const string def, const string &line, string &variable) {
+  if (line.find(def) != -1) {
+    variable = line.substr(strlen(def.c_str()));
+  }
+}
+
+void ConfigParser::ParseDefinition(const string def, const string &line, int &variable) {
+  if (line.find(def) != -1) {
+    variable = atoi(line.substr(def.size()).c_str());
+  }
+}
+string ConfigParser::GetIP() {
+  return ip_address_;
+}
+int ConfigParser::GetPort() {
+  return port_;
 }

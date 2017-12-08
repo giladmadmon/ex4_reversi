@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client
+CMAKE_SOURCE_DIR = /home/gilad/CLionProjects/Task_04_Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include server/CMakeFiles/Task_04_Server.dir/depend.make
@@ -59,16 +59,16 @@ include server/CMakeFiles/Task_04_Server.dir/flags.make
 
 server/CMakeFiles/Task_04_Server.dir/main.cpp.o: server/CMakeFiles/Task_04_Server.dir/flags.make
 server/CMakeFiles/Task_04_Server.dir/main.cpp.o: ../server/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object server/CMakeFiles/Task_04_Server.dir/main.cpp.o"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/main.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object server/CMakeFiles/Task_04_Server.dir/main.cpp.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/main.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/server/main.cpp
 
 server/CMakeFiles/Task_04_Server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/main.cpp.i"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/main.cpp > CMakeFiles/Task_04_Server.dir/main.cpp.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/server/main.cpp > CMakeFiles/Task_04_Server.dir/main.cpp.i
 
 server/CMakeFiles/Task_04_Server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/main.cpp.s"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/main.cpp -o CMakeFiles/Task_04_Server.dir/main.cpp.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/server/main.cpp -o CMakeFiles/Task_04_Server.dir/main.cpp.s
 
 server/CMakeFiles/Task_04_Server.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ server/CMakeFiles/Task_04_Server.dir/main.cpp.o.provides.build: server/CMakeFile
 
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.o: server/CMakeFiles/Task_04_Server.dir/flags.make
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.o: ../server/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object server/CMakeFiles/Task_04_Server.dir/Server.cpp.o"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/Server.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object server/CMakeFiles/Task_04_Server.dir/Server.cpp.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/Server.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/server/Server.cpp
 
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/Server.cpp.i"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/Server.cpp > CMakeFiles/Task_04_Server.dir/Server.cpp.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/server/Server.cpp > CMakeFiles/Task_04_Server.dir/Server.cpp.i
 
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/Server.cpp.s"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/Server.cpp -o CMakeFiles/Task_04_Server.dir/Server.cpp.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/server/Server.cpp -o CMakeFiles/Task_04_Server.dir/Server.cpp.s
 
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.requires:
 
@@ -105,20 +105,46 @@ server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.provides: server/CMakeFiles/Ta
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.provides.build: server/CMakeFiles/Task_04_Server.dir/Server.cpp.o
 
 
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o: server/CMakeFiles/Task_04_Server.dir/flags.make
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o: ../src/ConfigParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp
+
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp > CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i
+
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp -o CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s
+
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires:
+
+.PHONY : server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires
+
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires
+	$(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides.build
+.PHONY : server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides
+
+server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides.build: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o
+
+
 # Object files for target Task_04_Server
 Task_04_Server_OBJECTS = \
 "CMakeFiles/Task_04_Server.dir/main.cpp.o" \
-"CMakeFiles/Task_04_Server.dir/Server.cpp.o"
+"CMakeFiles/Task_04_Server.dir/Server.cpp.o" \
+"CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o"
 
 # External object files for target Task_04_Server
 Task_04_Server_EXTERNAL_OBJECTS =
 
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/main.cpp.o
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/Server.cpp.o
+server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/build.make
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Task_04_Server"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Task_04_Server.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Task_04_Server"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Task_04_Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 server/CMakeFiles/Task_04_Server.dir/build: server/Task_04_Server
@@ -127,14 +153,15 @@ server/CMakeFiles/Task_04_Server.dir/build: server/Task_04_Server
 
 server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/main.cpp.o.requires
 server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.requires
+server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires
 
 .PHONY : server/CMakeFiles/Task_04_Server.dir/requires
 
 server/CMakeFiles/Task_04_Server.dir/clean:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server && $(CMAKE_COMMAND) -P CMakeFiles/Task_04_Server.dir/cmake_clean.cmake
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && $(CMAKE_COMMAND) -P CMakeFiles/Task_04_Server.dir/cmake_clean.cmake
 .PHONY : server/CMakeFiles/Task_04_Server.dir/clean
 
 server/CMakeFiles/Task_04_Server.dir/depend:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gilad/CLionProjects/Task_04_Final /home/gilad/CLionProjects/Task_04_Final/server /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : server/CMakeFiles/Task_04_Server.dir/depend
 

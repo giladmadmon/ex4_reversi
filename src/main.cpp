@@ -14,25 +14,19 @@
 #include "../include/OnlinePlayer.h"
 #include "../include/ConfigParser.h"
 
-
-int const Bufsize=20;
-
 #include <limits>
 #define MAX_OPTION 3
 #define MIN_OPTION 1
-#define IP_LENGTH 16
-#define PORT_LENGTH 6
 
 void StartGameWhite(const Player &other_player, Board &board, Logic &logic);
 void StartGameBlack(const Player &other_player, Board &board, Logic &logic);
-void GetConfig();
 
 int main() {
   int option;
   bool valid;
-  Board board;
+  Board board(4);
   ClassicLogic logic;
-  ConfigParser config_parser;
+  ConfigParser config_parser(CONFIG_FILE_NAME);
 
   cout << "Hello! who would you like to play Reversi with?:)" << endl;
   cout << "(1) Your Friend. " << endl;
@@ -60,17 +54,13 @@ int main() {
     case 2:StartGameWhite(AIPlayer(board, logic), board, logic);
       break;
     case 3:
-        config_parser.
-        char ip_add[IP_LENGTH];
-        char port[PORT_LENGTH];
-        GetConfig(ip_add,port);
-          /////
-        OnlinePlayer online_player = OnlinePlayer("127.0.0.1", 8001);
+      OnlinePlayer online_player = OnlinePlayer(config_parser.GetIP().c_str(), config_parser.GetPort());
+
       online_player.connectToServer();
 
       if (online_player.GetColor() == Black) {
         StartGameBlack(online_player, board, logic);
-      }else{
+      } else {
         StartGameWhite(online_player, board, logic);
       }
 

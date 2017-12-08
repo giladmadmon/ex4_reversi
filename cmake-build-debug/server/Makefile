@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client
+CMAKE_SOURCE_DIR = /home/gilad/CLionProjects/Task_04_Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server/CMakeFiles/progress.marks
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles 0
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server/CMakeFiles/progress.marks
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/clean
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 server/CMakeFiles/Task_04_Server.dir/rule:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/Task_04_Server.dir/rule
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/Task_04_Server.dir/rule
 .PHONY : server/CMakeFiles/Task_04_Server.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ Task_04_Server: server/CMakeFiles/Task_04_Server.dir/rule
 
 # fast build rule for target.
 Task_04_Server/fast:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/build
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/build
 .PHONY : Task_04_Server/fast
 
 Server.o: Server.cpp.o
@@ -177,7 +177,7 @@ Server.o: Server.cpp.o
 
 # target to build an object file
 Server.cpp.o:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.o
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.o
 .PHONY : Server.cpp.o
 
 Server.i: Server.cpp.i
@@ -186,7 +186,7 @@ Server.i: Server.cpp.i
 
 # target to preprocess a source file
 Server.cpp.i:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.i
 .PHONY : Server.cpp.i
 
 Server.s: Server.cpp.s
@@ -195,8 +195,35 @@ Server.s: Server.cpp.s
 
 # target to generate assembly for a file
 Server.cpp.s:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.s
 .PHONY : Server.cpp.s
+
+__/src/ConfigParser.o: __/src/ConfigParser.cpp.o
+
+.PHONY : __/src/ConfigParser.o
+
+# target to build an object file
+__/src/ConfigParser.cpp.o:
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o
+.PHONY : __/src/ConfigParser.cpp.o
+
+__/src/ConfigParser.i: __/src/ConfigParser.cpp.i
+
+.PHONY : __/src/ConfigParser.i
+
+# target to preprocess a source file
+__/src/ConfigParser.cpp.i:
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i
+.PHONY : __/src/ConfigParser.cpp.i
+
+__/src/ConfigParser.s: __/src/ConfigParser.cpp.s
+
+.PHONY : __/src/ConfigParser.s
+
+# target to generate assembly for a file
+__/src/ConfigParser.cpp.s:
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s
+.PHONY : __/src/ConfigParser.cpp.s
 
 main.o: main.cpp.o
 
@@ -204,7 +231,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/main.cpp.o
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -213,7 +240,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/main.cpp.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -222,7 +249,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/main.cpp.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -241,6 +268,9 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... __/src/ConfigParser.o"
+	@echo "... __/src/ConfigParser.i"
+	@echo "... __/src/ConfigParser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -255,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

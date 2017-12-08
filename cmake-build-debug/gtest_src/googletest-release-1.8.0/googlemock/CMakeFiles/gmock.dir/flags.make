@@ -6,5 +6,5 @@ CXX_FLAGS = -g    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/include -I/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock -I/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googletest/include -I/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googletest 
+CXX_INCLUDES = -I/home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/include -I/home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock -I/home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googletest/include -I/home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googletest 
 

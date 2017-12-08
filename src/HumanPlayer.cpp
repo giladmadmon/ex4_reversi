@@ -103,10 +103,14 @@ Position HumanPlayer::MakeAMove(vector<Position> &possible_moves, Printer &print
   convert << "NoMove";
   strcpy(reinterpret_cast<char *>(&msg), convert.str().c_str());
 
-  printer.PrintNoMoves(color);
+  if (color != NoColor) {
+    printer.PrintNoMoves(color);
 
-  while (!KeyboardHit());
-  cin.ignore(1);
+    while (!KeyboardHit());
+    cin.ignore(1);
+  } else {
+    strcpy(msg, "End");
+  }
 
   return Position(-1, -1);
 }

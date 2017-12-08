@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/Server.cpp" "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/Server.cpp.o"
-  "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/server/main.cpp" "/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/main.cpp.o"
+  "/home/gilad/CLionProjects/Task_04_Final/server/Server.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/Server.cpp.o"
+  "/home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o"
+  "/home/gilad/CLionProjects/Task_04_Final/server/main.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server/CMakeFiles/Task_04_Server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client
+CMAKE_SOURCE_DIR = /home/gilad/CLionProjects/Task_04_Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/depend.make
@@ -59,16 +59,16 @@ include gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/flags.make
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o: ../gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc > CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc > CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googletest/src/gtest-all.cc -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o.requires:
 
@@ -83,16 +83,16 @@ gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googl
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/flags.make
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o: ../gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock-all.cc.i"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc > CMakeFiles/gmock_main.dir/src/gmock-all.cc.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc > CMakeFiles/gmock_main.dir/src/gmock-all.cc.i
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock-all.cc.s"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/src/gmock-all.cc -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.s
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o.requires:
 
@@ -107,16 +107,16 @@ gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmoc
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/flags.make
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: ../gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock_main.cc.i"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc > CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc > CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock_main.cc.s"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock/src/gmock_main.cc -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.requires:
 
@@ -143,9 +143,9 @@ gtest_src/googletest-release-1.8.0/googlemock/libgmock_main.a: gtest_src/googlet
 gtest_src/googletest-release-1.8.0/googlemock/libgmock_main.a: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 gtest_src/googletest-release-1.8.0/googlemock/libgmock_main.a: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make
 gtest_src/googletest-release-1.8.0/googlemock/libgmock_main.a: gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgmock_main.a"
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean_target.cmake
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgmock_main.a"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean_target.cmake
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build: gtest_src/googletest-release-1.8.0/googlemock/libgmock_main.a
@@ -159,10 +159,10 @@ gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/requires
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/requires
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/clean:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean.cmake
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean.cmake
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/clean
 
 gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/depend:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/gtest_src/googletest-release-1.8.0/googlemock /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gilad/CLionProjects/Task_04_Final /home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/googlemock /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/depend
 

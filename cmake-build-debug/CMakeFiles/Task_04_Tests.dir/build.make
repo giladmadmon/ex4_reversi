@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/dafnamagid/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client
+CMAKE_SOURCE_DIR = /home/gilad/CLionProjects/Task_04_Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Task_04_Tests.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Task_04_Tests.dir/flags.make
 
 CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o: ../src/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Position.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/Position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/Position.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Position.cpp > CMakeFiles/Task_04_Tests.dir/src/Position.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Position.cpp > CMakeFiles/Task_04_Tests.dir/src/Position.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/Position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/Position.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Position.cpp -o CMakeFiles/Task_04_Tests.dir/src/Position.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Position.cpp -o CMakeFiles/Task_04_Tests.dir/src/Position.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o.provides.build: CMakeFiles/Task_
 
 CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Player.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Player.cpp > CMakeFiles/Task_04_Tests.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Player.cpp > CMakeFiles/Task_04_Tests.dir/src/Player.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Player.cpp -o CMakeFiles/Task_04_Tests.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Player.cpp -o CMakeFiles/Task_04_Tests.dir/src/Player.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o.provides.build: CMakeFiles/Task_04
 
 CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o: ../src/HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/HumanPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/HumanPlayer.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/HumanPlayer.cpp > CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/HumanPlayer.cpp > CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/HumanPlayer.cpp -o CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/HumanPlayer.cpp -o CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/Ta
 
 CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Board.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Board.cpp > CMakeFiles/Task_04_Tests.dir/src/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Board.cpp > CMakeFiles/Task_04_Tests.dir/src/Board.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Board.cpp -o CMakeFiles/Task_04_Tests.dir/src/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Board.cpp -o CMakeFiles/Task_04_Tests.dir/src/Board.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o.provides.build: CMakeFiles/Task_04_
 
 CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o: ../src/Logic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Logic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Logic.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Logic.cpp > CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Logic.cpp > CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/Logic.cpp -o CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Logic.cpp -o CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o.provides.build: CMakeFiles/Task_04_
 
 CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o: ../src/ClassicLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ClassicLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ClassicLogic.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ClassicLogic.cpp > CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ClassicLogic.cpp > CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ClassicLogic.cpp -o CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ClassicLogic.cpp -o CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o.provides.build: CMakeFiles/T
 
 CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o: ../src/ReversiGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ReversiGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ReversiGame.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ReversiGame.cpp > CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ReversiGame.cpp > CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ReversiGame.cpp -o CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ReversiGame.cpp -o CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o.provides.build: CMakeFiles/Ta
 
 CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o: ../src/ConsolePrinter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ConsolePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ConsolePrinter.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ConsolePrinter.cpp > CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ConsolePrinter.cpp > CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ConsolePrinter.cpp -o CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ConsolePrinter.cpp -o CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/AIPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/AIPlayer.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/AIPlayer.cpp > CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/AIPlayer.cpp > CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/AIPlayer.cpp -o CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/AIPlayer.cpp -o CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/Task_
 
 CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o: ../src/OnlinePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/OnlinePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/OnlinePlayer.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/OnlinePlayer.cpp > CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/OnlinePlayer.cpp > CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/OnlinePlayer.cpp -o CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/OnlinePlayer.cpp -o CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o.provides.build: CMakeFiles/T
 
 CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o: ../src/ConfigParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ConfigParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp
 
 CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ConfigParser.cpp > CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp > CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/src/ConfigParser.cpp -o CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp -o CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o.provides.build: CMakeFiles/T
 
 CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o: ../test/BoardTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/BoardTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/test/BoardTest.cpp
 
 CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/BoardTest.cpp > CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/test/BoardTest.cpp > CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/BoardTest.cpp -o CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/test/BoardTest.cpp -o CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o.provides.build: CMakeFiles/Tas
 
 CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o: ../test/ClassicLogicTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/ClassicLogicTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/test/ClassicLogicTest.cpp
 
 CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/ClassicLogicTest.cpp > CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/test/ClassicLogicTest.cpp > CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/ClassicLogicTest.cpp -o CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/test/ClassicLogicTest.cpp -o CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o: ../test/AIPlayerTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/AIPlayerTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/test/AIPlayerTest.cpp
 
 CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/AIPlayerTest.cpp > CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/test/AIPlayerTest.cpp > CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/AIPlayerTest.cpp -o CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/test/AIPlayerTest.cpp -o CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Task_04_Tests.dir/test/main.cpp.o: CMakeFiles/Task_04_Tests.dir/flags.make
 CMakeFiles/Task_04_Tests.dir/test/main.cpp.o: ../test/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/main.cpp.o -c /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Task_04_Tests.dir/test/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Tests.dir/test/main.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/test/main.cpp
 
 CMakeFiles/Task_04_Tests.dir/test/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Tests.dir/test/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/main.cpp > CMakeFiles/Task_04_Tests.dir/test/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/test/main.cpp > CMakeFiles/Task_04_Tests.dir/test/main.cpp.i
 
 CMakeFiles/Task_04_Tests.dir/test/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Tests.dir/test/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/test/main.cpp -o CMakeFiles/Task_04_Tests.dir/test/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/test/main.cpp -o CMakeFiles/Task_04_Tests.dir/test/main.cpp.s
 
 CMakeFiles/Task_04_Tests.dir/test/main.cpp.o.requires:
 
@@ -459,7 +459,7 @@ Task_04_Tests: gtest_src/googletest-release-1.8.0/googlemock/gtest/libgtest_main
 Task_04_Tests: gtest_src/googletest-release-1.8.0/googlemock/libgmock.a
 Task_04_Tests: gtest_src/googletest-release-1.8.0/googlemock/gtest/libgtest.a
 Task_04_Tests: CMakeFiles/Task_04_Tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Task_04_Tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Task_04_Tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Task_04_Tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -490,6 +490,6 @@ CMakeFiles/Task_04_Tests.dir/clean:
 .PHONY : CMakeFiles/Task_04_Tests.dir/clean
 
 CMakeFiles/Task_04_Tests.dir/depend:
-	cd /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug /home/dafnamagid/CLionProjects/ex04/ex4_reversi-client/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gilad/CLionProjects/Task_04_Final /home/gilad/CLionProjects/Task_04_Final /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Task_04_Tests.dir/depend
 

@@ -66,10 +66,6 @@ Position OnlinePlayer::MakeAMove(vector<Position> &possible_moves,
     if (n == -1) {
       return Position(-1, -1);
     }
-
-    if (strcmp(reinterpret_cast<const char *>(&msg), "End") == 0) {
-      return Position(-1, -1);
-    }
   }
 
   n = read(client_socket, &msg, sizeof(msg));
@@ -77,10 +73,13 @@ Position OnlinePlayer::MakeAMove(vector<Position> &possible_moves,
     return Position(-1, -1);
   }
 
+  if (strcmp(reinterpret_cast<const char *>(&msg), "End") == 0) {
+    return Position(-1, -1);
+  }
+
   if (strcmp(msg, "NoMove") == 0) {
     printer.PrintAINoMove(color);
-  }
-  else {
+  } else {
     chosen_row = atoi(strtok(reinterpret_cast<char *>(&msg), MOVE_DELIMITER));
     chosen_column = atoi(strtok(NULL, MOVE_DELIMITER));
   }

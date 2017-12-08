@@ -5,6 +5,7 @@
 **************/
 #ifndef TASK_04_SERVER_H
 #define TASK_04_SERVER_H
+
 enum GameStatus { NO_MOVE, GAME_ENDED, PLAYING, ERROR };
 
 class Server {
@@ -16,8 +17,7 @@ class Server {
  private:
   int port;
   int serverSocket; // the socket's file descriptor
-  int handleClient(int clientSocket);
-  int calc(int arg1, const char op, int arg2) const;
+
   int TellTurn(int firstClientSocket, int secondClientSocket);
   int ConnectClients(int &firstClientSocket, int &secondClientSocket);
   GameStatus PlayOneTurn(int currentClient, int otherClient);

@@ -18,7 +18,7 @@ class ReversiGame {
   Board &board_;
   Printer &printer_;
   bool new_game_;
-  char msg[7] = "";
+  char msg[7];
  public:
   /**
    * Constructor.
@@ -46,6 +46,8 @@ class ReversiGame {
    * Play the game till it ends.
    */
   void PlayGame();
+  void EndTurn();
+  Player *GetPlayer(PlayerColor color);
 };
 
 #endif //TASK_02_REVERSIGAME_H
