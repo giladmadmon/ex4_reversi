@@ -34,8 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server/cmake_install.cmake")
-  include("/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0/cmake_install.cmake")
+  include("/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/client/gtest_src/googletest-release-1.8.0/cmake_install.cmake")
 
 endif()
 

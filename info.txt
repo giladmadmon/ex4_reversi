@@ -1,7 +1,0 @@
-Name:	Gilad Madmon
-ID:		305132599
-Tirgul:	03
-
-Name:	Dafna Magid
-ID:		315635870
-Tirgul:	05

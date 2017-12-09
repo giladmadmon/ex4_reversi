@@ -105,42 +105,42 @@ server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.provides: server/CMakeFiles/Ta
 server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.provides.build: server/CMakeFiles/Task_04_Server.dir/Server.cpp.o
 
 
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o: server/CMakeFiles/Task_04_Server.dir/flags.make
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o: ../src/ConfigParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o"
-	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o: server/CMakeFiles/Task_04_Server.dir/flags.make
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o: ../src/client/src/ConfigParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp
 
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i"
-	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp > CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.i"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp > CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.i
 
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s"
-	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp -o CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.s"
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp -o CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.s
 
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires:
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.requires:
 
-.PHONY : server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires
+.PHONY : server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.requires
 
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires
-	$(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides.build
-.PHONY : server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.provides: server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.requires
+	$(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.provides.build
+.PHONY : server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.provides
 
-server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.provides.build: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o
+server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.provides.build: server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o
 
 
 # Object files for target Task_04_Server
 Task_04_Server_OBJECTS = \
 "CMakeFiles/Task_04_Server.dir/main.cpp.o" \
 "CMakeFiles/Task_04_Server.dir/Server.cpp.o" \
-"CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o"
+"CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o"
 
 # External object files for target Task_04_Server
 Task_04_Server_EXTERNAL_OBJECTS =
 
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/main.cpp.o
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/Server.cpp.o
-server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o
+server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/build.make
 server/Task_04_Server: server/CMakeFiles/Task_04_Server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Task_04_Server"
@@ -153,7 +153,7 @@ server/CMakeFiles/Task_04_Server.dir/build: server/Task_04_Server
 
 server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/main.cpp.o.requires
 server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/Server.cpp.o.requires
-server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o.requires
+server/CMakeFiles/Task_04_Server.dir/requires: server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o.requires
 
 .PHONY : server/CMakeFiles/Task_04_Server.dir/requires
 

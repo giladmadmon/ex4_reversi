@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Task_04_Server2.dir/main.cpp.o CMakeFiles/Task_04_Server2.dir/Server.cpp.o CMakeFiles/Task_04_Server2.dir/__/client/src/ConfigParser.cpp.o  -o Task_04_Server2 

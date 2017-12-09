@@ -80,28 +80,6 @@ install/local/fast: preinstall/fast
 	/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/opt/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/opt/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,6 +101,28 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Task_04_Server
+
+# Build rule for target.
+Task_04_Server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Task_04_Server
+.PHONY : Task_04_Server
+
+# fast build rule for target.
+Task_04_Server/fast:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/build
+.PHONY : Task_04_Server/fast
+
+#=============================================================================
 # Target rules for targets named Task_04_Tests
 
 # Build rule for target.
@@ -170,30 +183,17 @@ Task_04_Tests/fast:
 .PHONY : Task_04_Tests/fast
 
 #=============================================================================
-# Target rules for targets named Task_04
+# Target rules for targets named Task_04_Client
 
 # Build rule for target.
-Task_04: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Task_04
-.PHONY : Task_04
+Task_04_Client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Task_04_Client
+.PHONY : Task_04_Client
 
 # fast build rule for target.
-Task_04/fast:
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/build
-.PHONY : Task_04/fast
-
-#=============================================================================
-# Target rules for targets named Task_04_Server
-
-# Build rule for target.
-Task_04_Server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Task_04_Server
-.PHONY : Task_04_Server
-
-# fast build rule for target.
-Task_04_Server/fast:
-	$(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/build
-.PHONY : Task_04_Server/fast
+Task_04_Client/fast:
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/build
+.PHONY : Task_04_Client/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -205,7 +205,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) -f src/client/gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make src/client/gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -218,7 +218,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) -f src/client/gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make src/client/gtest_src/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -231,7 +231,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f src/client/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make src/client/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -244,473 +244,530 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
+	$(MAKE) -f src/client/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make src/client/gtest_src/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-src/AIPlayer.o: src/AIPlayer.cpp.o
+src/client/src/AIPlayer.o: src/client/src/AIPlayer.cpp.o
 
-.PHONY : src/AIPlayer.o
-
-# target to build an object file
-src/AIPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o
-.PHONY : src/AIPlayer.cpp.o
-
-src/AIPlayer.i: src/AIPlayer.cpp.i
-
-.PHONY : src/AIPlayer.i
-
-# target to preprocess a source file
-src/AIPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/AIPlayer.cpp.i
-.PHONY : src/AIPlayer.cpp.i
-
-src/AIPlayer.s: src/AIPlayer.cpp.s
-
-.PHONY : src/AIPlayer.s
-
-# target to generate assembly for a file
-src/AIPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/AIPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/AIPlayer.cpp.s
-.PHONY : src/AIPlayer.cpp.s
-
-src/Board.o: src/Board.cpp.o
-
-.PHONY : src/Board.o
+.PHONY : src/client/src/AIPlayer.o
 
 # target to build an object file
-src/Board.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Board.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Board.cpp.o
-.PHONY : src/Board.cpp.o
+src/client/src/AIPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/AIPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/AIPlayer.cpp.o
+.PHONY : src/client/src/AIPlayer.cpp.o
 
-src/Board.i: src/Board.cpp.i
+src/client/src/AIPlayer.i: src/client/src/AIPlayer.cpp.i
 
-.PHONY : src/Board.i
+.PHONY : src/client/src/AIPlayer.i
 
 # target to preprocess a source file
-src/Board.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Board.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Board.cpp.i
-.PHONY : src/Board.cpp.i
+src/client/src/AIPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/AIPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/AIPlayer.cpp.i
+.PHONY : src/client/src/AIPlayer.cpp.i
 
-src/Board.s: src/Board.cpp.s
+src/client/src/AIPlayer.s: src/client/src/AIPlayer.cpp.s
 
-.PHONY : src/Board.s
+.PHONY : src/client/src/AIPlayer.s
 
 # target to generate assembly for a file
-src/Board.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Board.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Board.cpp.s
-.PHONY : src/Board.cpp.s
+src/client/src/AIPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/AIPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/AIPlayer.cpp.s
+.PHONY : src/client/src/AIPlayer.cpp.s
 
-src/ClassicLogic.o: src/ClassicLogic.cpp.o
+src/client/src/Board.o: src/client/src/Board.cpp.o
 
-.PHONY : src/ClassicLogic.o
+.PHONY : src/client/src/Board.o
 
 # target to build an object file
-src/ClassicLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o
-.PHONY : src/ClassicLogic.cpp.o
+src/client/src/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Board.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.o
+.PHONY : src/client/src/Board.cpp.o
 
-src/ClassicLogic.i: src/ClassicLogic.cpp.i
+src/client/src/Board.i: src/client/src/Board.cpp.i
 
-.PHONY : src/ClassicLogic.i
+.PHONY : src/client/src/Board.i
 
 # target to preprocess a source file
-src/ClassicLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.i
-.PHONY : src/ClassicLogic.cpp.i
+src/client/src/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Board.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.i
+.PHONY : src/client/src/Board.cpp.i
 
-src/ClassicLogic.s: src/ClassicLogic.cpp.s
+src/client/src/Board.s: src/client/src/Board.cpp.s
 
-.PHONY : src/ClassicLogic.s
+.PHONY : src/client/src/Board.s
 
 # target to generate assembly for a file
-src/ClassicLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ClassicLogic.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.s
-.PHONY : src/ClassicLogic.cpp.s
+src/client/src/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Board.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.s
+.PHONY : src/client/src/Board.cpp.s
 
-src/ConfigParser.o: src/ConfigParser.cpp.o
+src/client/src/ClassicLogic.o: src/client/src/ClassicLogic.cpp.o
 
-.PHONY : src/ConfigParser.o
+.PHONY : src/client/src/ClassicLogic.o
 
 # target to build an object file
-src/ConfigParser.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o
-.PHONY : src/ConfigParser.cpp.o
+src/client/src/ClassicLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ClassicLogic.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ClassicLogic.cpp.o
+.PHONY : src/client/src/ClassicLogic.cpp.o
 
-src/ConfigParser.i: src/ConfigParser.cpp.i
+src/client/src/ClassicLogic.i: src/client/src/ClassicLogic.cpp.i
 
-.PHONY : src/ConfigParser.i
+.PHONY : src/client/src/ClassicLogic.i
 
 # target to preprocess a source file
-src/ConfigParser.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConfigParser.cpp.i
-.PHONY : src/ConfigParser.cpp.i
+src/client/src/ClassicLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ClassicLogic.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ClassicLogic.cpp.i
+.PHONY : src/client/src/ClassicLogic.cpp.i
 
-src/ConfigParser.s: src/ConfigParser.cpp.s
+src/client/src/ClassicLogic.s: src/client/src/ClassicLogic.cpp.s
 
-.PHONY : src/ConfigParser.s
+.PHONY : src/client/src/ClassicLogic.s
 
 # target to generate assembly for a file
-src/ConfigParser.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ConfigParser.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConfigParser.cpp.s
-.PHONY : src/ConfigParser.cpp.s
+src/client/src/ClassicLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ClassicLogic.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ClassicLogic.cpp.s
+.PHONY : src/client/src/ClassicLogic.cpp.s
 
-src/ConsolePrinter.o: src/ConsolePrinter.cpp.o
+src/client/src/ConfigParser.o: src/client/src/ConfigParser.cpp.o
 
-.PHONY : src/ConsolePrinter.o
+.PHONY : src/client/src/ConfigParser.o
 
 # target to build an object file
-src/ConsolePrinter.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o
-.PHONY : src/ConsolePrinter.cpp.o
+src/client/src/ConfigParser.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConfigParser.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConfigParser.cpp.o
+.PHONY : src/client/src/ConfigParser.cpp.o
 
-src/ConsolePrinter.i: src/ConsolePrinter.cpp.i
+src/client/src/ConfigParser.i: src/client/src/ConfigParser.cpp.i
 
-.PHONY : src/ConsolePrinter.i
+.PHONY : src/client/src/ConfigParser.i
 
 # target to preprocess a source file
-src/ConsolePrinter.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.i
-.PHONY : src/ConsolePrinter.cpp.i
+src/client/src/ConfigParser.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConfigParser.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConfigParser.cpp.i
+.PHONY : src/client/src/ConfigParser.cpp.i
 
-src/ConsolePrinter.s: src/ConsolePrinter.cpp.s
+src/client/src/ConfigParser.s: src/client/src/ConfigParser.cpp.s
 
-.PHONY : src/ConsolePrinter.s
+.PHONY : src/client/src/ConfigParser.s
 
 # target to generate assembly for a file
-src/ConsolePrinter.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ConsolePrinter.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.s
-.PHONY : src/ConsolePrinter.cpp.s
+src/client/src/ConfigParser.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConfigParser.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConfigParser.cpp.s
+.PHONY : src/client/src/ConfigParser.cpp.s
 
-src/HumanPlayer.o: src/HumanPlayer.cpp.o
+src/client/src/ConsolePrinter.o: src/client/src/ConsolePrinter.cpp.o
 
-.PHONY : src/HumanPlayer.o
+.PHONY : src/client/src/ConsolePrinter.o
 
 # target to build an object file
-src/HumanPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o
-.PHONY : src/HumanPlayer.cpp.o
+src/client/src/ConsolePrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConsolePrinter.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConsolePrinter.cpp.o
+.PHONY : src/client/src/ConsolePrinter.cpp.o
 
-src/HumanPlayer.i: src/HumanPlayer.cpp.i
+src/client/src/ConsolePrinter.i: src/client/src/ConsolePrinter.cpp.i
 
-.PHONY : src/HumanPlayer.i
+.PHONY : src/client/src/ConsolePrinter.i
 
 # target to preprocess a source file
-src/HumanPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.i
-.PHONY : src/HumanPlayer.cpp.i
+src/client/src/ConsolePrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConsolePrinter.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConsolePrinter.cpp.i
+.PHONY : src/client/src/ConsolePrinter.cpp.i
 
-src/HumanPlayer.s: src/HumanPlayer.cpp.s
+src/client/src/ConsolePrinter.s: src/client/src/ConsolePrinter.cpp.s
 
-.PHONY : src/HumanPlayer.s
+.PHONY : src/client/src/ConsolePrinter.s
 
 # target to generate assembly for a file
-src/HumanPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/HumanPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.s
-.PHONY : src/HumanPlayer.cpp.s
+src/client/src/ConsolePrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConsolePrinter.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConsolePrinter.cpp.s
+.PHONY : src/client/src/ConsolePrinter.cpp.s
 
-src/Logic.o: src/Logic.cpp.o
+src/client/src/HumanPlayer.o: src/client/src/HumanPlayer.cpp.o
 
-.PHONY : src/Logic.o
+.PHONY : src/client/src/HumanPlayer.o
 
 # target to build an object file
-src/Logic.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Logic.cpp.o
-.PHONY : src/Logic.cpp.o
+src/client/src/HumanPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/HumanPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/HumanPlayer.cpp.o
+.PHONY : src/client/src/HumanPlayer.cpp.o
 
-src/Logic.i: src/Logic.cpp.i
+src/client/src/HumanPlayer.i: src/client/src/HumanPlayer.cpp.i
 
-.PHONY : src/Logic.i
+.PHONY : src/client/src/HumanPlayer.i
 
 # target to preprocess a source file
-src/Logic.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Logic.cpp.i
-.PHONY : src/Logic.cpp.i
+src/client/src/HumanPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/HumanPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/HumanPlayer.cpp.i
+.PHONY : src/client/src/HumanPlayer.cpp.i
 
-src/Logic.s: src/Logic.cpp.s
+src/client/src/HumanPlayer.s: src/client/src/HumanPlayer.cpp.s
 
-.PHONY : src/Logic.s
+.PHONY : src/client/src/HumanPlayer.s
 
 # target to generate assembly for a file
-src/Logic.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Logic.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Logic.cpp.s
-.PHONY : src/Logic.cpp.s
+src/client/src/HumanPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/HumanPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/HumanPlayer.cpp.s
+.PHONY : src/client/src/HumanPlayer.cpp.s
 
-src/OnlinePlayer.o: src/OnlinePlayer.cpp.o
+src/client/src/Logic.o: src/client/src/Logic.cpp.o
 
-.PHONY : src/OnlinePlayer.o
+.PHONY : src/client/src/Logic.o
 
 # target to build an object file
-src/OnlinePlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o
-.PHONY : src/OnlinePlayer.cpp.o
+src/client/src/Logic.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Logic.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Logic.cpp.o
+.PHONY : src/client/src/Logic.cpp.o
 
-src/OnlinePlayer.i: src/OnlinePlayer.cpp.i
+src/client/src/Logic.i: src/client/src/Logic.cpp.i
 
-.PHONY : src/OnlinePlayer.i
+.PHONY : src/client/src/Logic.i
 
 # target to preprocess a source file
-src/OnlinePlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.i
-.PHONY : src/OnlinePlayer.cpp.i
+src/client/src/Logic.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Logic.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Logic.cpp.i
+.PHONY : src/client/src/Logic.cpp.i
 
-src/OnlinePlayer.s: src/OnlinePlayer.cpp.s
+src/client/src/Logic.s: src/client/src/Logic.cpp.s
 
-.PHONY : src/OnlinePlayer.s
+.PHONY : src/client/src/Logic.s
 
 # target to generate assembly for a file
-src/OnlinePlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/OnlinePlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.s
-.PHONY : src/OnlinePlayer.cpp.s
+src/client/src/Logic.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Logic.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Logic.cpp.s
+.PHONY : src/client/src/Logic.cpp.s
 
-src/Player.o: src/Player.cpp.o
+src/client/src/OnlinePlayer.o: src/client/src/OnlinePlayer.cpp.o
 
-.PHONY : src/Player.o
+.PHONY : src/client/src/OnlinePlayer.o
 
 # target to build an object file
-src/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Player.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Player.cpp.o
-.PHONY : src/Player.cpp.o
+src/client/src/OnlinePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/OnlinePlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/OnlinePlayer.cpp.o
+.PHONY : src/client/src/OnlinePlayer.cpp.o
 
-src/Player.i: src/Player.cpp.i
+src/client/src/OnlinePlayer.i: src/client/src/OnlinePlayer.cpp.i
 
-.PHONY : src/Player.i
+.PHONY : src/client/src/OnlinePlayer.i
 
 # target to preprocess a source file
-src/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Player.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Player.cpp.i
-.PHONY : src/Player.cpp.i
+src/client/src/OnlinePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/OnlinePlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/OnlinePlayer.cpp.i
+.PHONY : src/client/src/OnlinePlayer.cpp.i
 
-src/Player.s: src/Player.cpp.s
+src/client/src/OnlinePlayer.s: src/client/src/OnlinePlayer.cpp.s
 
-.PHONY : src/Player.s
+.PHONY : src/client/src/OnlinePlayer.s
 
 # target to generate assembly for a file
-src/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Player.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Player.cpp.s
-.PHONY : src/Player.cpp.s
+src/client/src/OnlinePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/OnlinePlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/OnlinePlayer.cpp.s
+.PHONY : src/client/src/OnlinePlayer.cpp.s
 
-src/Position.o: src/Position.cpp.o
+src/client/src/Player.o: src/client/src/Player.cpp.o
 
-.PHONY : src/Position.o
+.PHONY : src/client/src/Player.o
 
 # target to build an object file
-src/Position.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Position.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Position.cpp.o
-.PHONY : src/Position.cpp.o
+src/client/src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.o
+.PHONY : src/client/src/Player.cpp.o
 
-src/Position.i: src/Position.cpp.i
+src/client/src/Player.i: src/client/src/Player.cpp.i
 
-.PHONY : src/Position.i
+.PHONY : src/client/src/Player.i
 
 # target to preprocess a source file
-src/Position.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Position.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Position.cpp.i
-.PHONY : src/Position.cpp.i
+src/client/src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.i
+.PHONY : src/client/src/Player.cpp.i
 
-src/Position.s: src/Position.cpp.s
+src/client/src/Player.s: src/client/src/Player.cpp.s
 
-.PHONY : src/Position.s
+.PHONY : src/client/src/Player.s
 
 # target to generate assembly for a file
-src/Position.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/Position.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Position.cpp.s
-.PHONY : src/Position.cpp.s
+src/client/src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.s
+.PHONY : src/client/src/Player.cpp.s
 
-src/ReversiGame.o: src/ReversiGame.cpp.o
+src/client/src/Position.o: src/client/src/Position.cpp.o
 
-.PHONY : src/ReversiGame.o
+.PHONY : src/client/src/Position.o
 
 # target to build an object file
-src/ReversiGame.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o
-.PHONY : src/ReversiGame.cpp.o
+src/client/src/Position.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.o
+.PHONY : src/client/src/Position.cpp.o
 
-src/ReversiGame.i: src/ReversiGame.cpp.i
+src/client/src/Position.i: src/client/src/Position.cpp.i
 
-.PHONY : src/ReversiGame.i
+.PHONY : src/client/src/Position.i
 
 # target to preprocess a source file
-src/ReversiGame.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ReversiGame.cpp.i
-.PHONY : src/ReversiGame.cpp.i
+src/client/src/Position.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.i
+.PHONY : src/client/src/Position.cpp.i
 
-src/ReversiGame.s: src/ReversiGame.cpp.s
+src/client/src/Position.s: src/client/src/Position.cpp.s
 
-.PHONY : src/ReversiGame.s
+.PHONY : src/client/src/Position.s
 
 # target to generate assembly for a file
-src/ReversiGame.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/ReversiGame.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ReversiGame.cpp.s
-.PHONY : src/ReversiGame.cpp.s
+src/client/src/Position.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.s
+.PHONY : src/client/src/Position.cpp.s
 
-src/main.o: src/main.cpp.o
+src/client/src/ReversiGame.o: src/client/src/ReversiGame.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/client/src/ReversiGame.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/client/src/ReversiGame.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ReversiGame.cpp.o
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ReversiGame.cpp.o
+.PHONY : src/client/src/ReversiGame.cpp.o
 
-src/main.i: src/main.cpp.i
+src/client/src/ReversiGame.i: src/client/src/ReversiGame.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/client/src/ReversiGame.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/client/src/ReversiGame.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ReversiGame.cpp.i
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ReversiGame.cpp.i
+.PHONY : src/client/src/ReversiGame.cpp.i
 
-src/main.s: src/main.cpp.s
+src/client/src/ReversiGame.s: src/client/src/ReversiGame.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/client/src/ReversiGame.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/client/src/ReversiGame.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ReversiGame.cpp.s
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ReversiGame.cpp.s
+.PHONY : src/client/src/ReversiGame.cpp.s
 
-test/AIPlayerTest.o: test/AIPlayerTest.cpp.o
+src/client/src/main.o: src/client/src/main.cpp.o
 
-.PHONY : test/AIPlayerTest.o
+.PHONY : src/client/src/main.o
 
 # target to build an object file
-test/AIPlayerTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.o
-.PHONY : test/AIPlayerTest.cpp.o
+src/client/src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/main.cpp.o
+.PHONY : src/client/src/main.cpp.o
 
-test/AIPlayerTest.i: test/AIPlayerTest.cpp.i
+src/client/src/main.i: src/client/src/main.cpp.i
 
-.PHONY : test/AIPlayerTest.i
+.PHONY : src/client/src/main.i
 
 # target to preprocess a source file
-test/AIPlayerTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.i
-.PHONY : test/AIPlayerTest.cpp.i
+src/client/src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/main.cpp.i
+.PHONY : src/client/src/main.cpp.i
 
-test/AIPlayerTest.s: test/AIPlayerTest.cpp.s
+src/client/src/main.s: src/client/src/main.cpp.s
 
-.PHONY : test/AIPlayerTest.s
+.PHONY : src/client/src/main.s
 
 # target to generate assembly for a file
-test/AIPlayerTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/AIPlayerTest.cpp.s
-.PHONY : test/AIPlayerTest.cpp.s
+src/client/src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/main.cpp.s
+.PHONY : src/client/src/main.cpp.s
 
-test/BoardTest.o: test/BoardTest.cpp.o
+src/client/test/AIPlayerTest.o: src/client/test/AIPlayerTest.cpp.o
 
-.PHONY : test/BoardTest.o
+.PHONY : src/client/test/AIPlayerTest.o
 
 # target to build an object file
-test/BoardTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.o
-.PHONY : test/BoardTest.cpp.o
+src/client/test/AIPlayerTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/AIPlayerTest.cpp.o
+.PHONY : src/client/test/AIPlayerTest.cpp.o
 
-test/BoardTest.i: test/BoardTest.cpp.i
+src/client/test/AIPlayerTest.i: src/client/test/AIPlayerTest.cpp.i
 
-.PHONY : test/BoardTest.i
+.PHONY : src/client/test/AIPlayerTest.i
 
 # target to preprocess a source file
-test/BoardTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.i
-.PHONY : test/BoardTest.cpp.i
+src/client/test/AIPlayerTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/AIPlayerTest.cpp.i
+.PHONY : src/client/test/AIPlayerTest.cpp.i
 
-test/BoardTest.s: test/BoardTest.cpp.s
+src/client/test/AIPlayerTest.s: src/client/test/AIPlayerTest.cpp.s
 
-.PHONY : test/BoardTest.s
+.PHONY : src/client/test/AIPlayerTest.s
 
 # target to generate assembly for a file
-test/BoardTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/BoardTest.cpp.s
-.PHONY : test/BoardTest.cpp.s
+src/client/test/AIPlayerTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/AIPlayerTest.cpp.s
+.PHONY : src/client/test/AIPlayerTest.cpp.s
 
-test/ClassicLogicTest.o: test/ClassicLogicTest.cpp.o
+src/client/test/BoardTest.o: src/client/test/BoardTest.cpp.o
 
-.PHONY : test/ClassicLogicTest.o
+.PHONY : src/client/test/BoardTest.o
 
 # target to build an object file
-test/ClassicLogicTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.o
-.PHONY : test/ClassicLogicTest.cpp.o
+src/client/test/BoardTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/BoardTest.cpp.o
+.PHONY : src/client/test/BoardTest.cpp.o
 
-test/ClassicLogicTest.i: test/ClassicLogicTest.cpp.i
+src/client/test/BoardTest.i: src/client/test/BoardTest.cpp.i
 
-.PHONY : test/ClassicLogicTest.i
+.PHONY : src/client/test/BoardTest.i
 
 # target to preprocess a source file
-test/ClassicLogicTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.i
-.PHONY : test/ClassicLogicTest.cpp.i
+src/client/test/BoardTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/BoardTest.cpp.i
+.PHONY : src/client/test/BoardTest.cpp.i
 
-test/ClassicLogicTest.s: test/ClassicLogicTest.cpp.s
+src/client/test/BoardTest.s: src/client/test/BoardTest.cpp.s
 
-.PHONY : test/ClassicLogicTest.s
+.PHONY : src/client/test/BoardTest.s
 
 # target to generate assembly for a file
-test/ClassicLogicTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/ClassicLogicTest.cpp.s
-.PHONY : test/ClassicLogicTest.cpp.s
+src/client/test/BoardTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/BoardTest.cpp.s
+.PHONY : src/client/test/BoardTest.cpp.s
 
-test/main.o: test/main.cpp.o
+src/client/test/ClassicLogicTest.o: src/client/test/ClassicLogicTest.cpp.o
 
-.PHONY : test/main.o
+.PHONY : src/client/test/ClassicLogicTest.o
 
 # target to build an object file
-test/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/main.cpp.o
-.PHONY : test/main.cpp.o
+src/client/test/ClassicLogicTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/ClassicLogicTest.cpp.o
+.PHONY : src/client/test/ClassicLogicTest.cpp.o
 
-test/main.i: test/main.cpp.i
+src/client/test/ClassicLogicTest.i: src/client/test/ClassicLogicTest.cpp.i
 
-.PHONY : test/main.i
+.PHONY : src/client/test/ClassicLogicTest.i
 
 # target to preprocess a source file
-test/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/main.cpp.i
-.PHONY : test/main.cpp.i
+src/client/test/ClassicLogicTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/ClassicLogicTest.cpp.i
+.PHONY : src/client/test/ClassicLogicTest.cpp.i
 
-test/main.s: test/main.cpp.s
+src/client/test/ClassicLogicTest.s: src/client/test/ClassicLogicTest.cpp.s
 
-.PHONY : test/main.s
+.PHONY : src/client/test/ClassicLogicTest.s
 
 # target to generate assembly for a file
-test/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/test/main.cpp.s
-.PHONY : test/main.cpp.s
+src/client/test/ClassicLogicTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/ClassicLogicTest.cpp.s
+.PHONY : src/client/test/ClassicLogicTest.cpp.s
+
+src/client/test/main.o: src/client/test/main.cpp.o
+
+.PHONY : src/client/test/main.o
+
+# target to build an object file
+src/client/test/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/main.cpp.o
+.PHONY : src/client/test/main.cpp.o
+
+src/client/test/main.i: src/client/test/main.cpp.i
+
+.PHONY : src/client/test/main.i
+
+# target to preprocess a source file
+src/client/test/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/main.cpp.i
+.PHONY : src/client/test/main.cpp.i
+
+src/client/test/main.s: src/client/test/main.cpp.s
+
+.PHONY : src/client/test/main.s
+
+# target to generate assembly for a file
+src/client/test/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/test/main.cpp.s
+.PHONY : src/client/test/main.cpp.s
+
+src/server/Server.o: src/server/Server.cpp.o
+
+.PHONY : src/server/Server.o
+
+# target to build an object file
+src/server/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.o
+.PHONY : src/server/Server.cpp.o
+
+src/server/Server.i: src/server/Server.cpp.i
+
+.PHONY : src/server/Server.i
+
+# target to preprocess a source file
+src/server/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.i
+.PHONY : src/server/Server.cpp.i
+
+src/server/Server.s: src/server/Server.cpp.s
+
+.PHONY : src/server/Server.s
+
+# target to generate assembly for a file
+src/server/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.s
+.PHONY : src/server/Server.cpp.s
+
+src/server/main.o: src/server/main.cpp.o
+
+.PHONY : src/server/main.o
+
+# target to build an object file
+src/server/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o
+.PHONY : src/server/main.cpp.o
+
+src/server/main.i: src/server/main.cpp.i
+
+.PHONY : src/server/main.i
+
+# target to preprocess a source file
+src/server/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/server/main.cpp.i
+.PHONY : src/server/main.cpp.i
+
+src/server/main.s: src/server/main.cpp.s
+
+.PHONY : src/server/main.s
+
+# target to generate assembly for a file
+src/server/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/server/main.cpp.s
+.PHONY : src/server/main.cpp.s
 
 # Help Target
 help:
@@ -720,65 +777,71 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Task_04_Tests"
-	@echo "... Task_04"
 	@echo "... Task_04_Server"
+	@echo "... Task_04_Tests"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... Task_04_Client"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... src/AIPlayer.o"
-	@echo "... src/AIPlayer.i"
-	@echo "... src/AIPlayer.s"
-	@echo "... src/Board.o"
-	@echo "... src/Board.i"
-	@echo "... src/Board.s"
-	@echo "... src/ClassicLogic.o"
-	@echo "... src/ClassicLogic.i"
-	@echo "... src/ClassicLogic.s"
-	@echo "... src/ConfigParser.o"
-	@echo "... src/ConfigParser.i"
-	@echo "... src/ConfigParser.s"
-	@echo "... src/ConsolePrinter.o"
-	@echo "... src/ConsolePrinter.i"
-	@echo "... src/ConsolePrinter.s"
-	@echo "... src/HumanPlayer.o"
-	@echo "... src/HumanPlayer.i"
-	@echo "... src/HumanPlayer.s"
-	@echo "... src/Logic.o"
-	@echo "... src/Logic.i"
-	@echo "... src/Logic.s"
-	@echo "... src/OnlinePlayer.o"
-	@echo "... src/OnlinePlayer.i"
-	@echo "... src/OnlinePlayer.s"
-	@echo "... src/Player.o"
-	@echo "... src/Player.i"
-	@echo "... src/Player.s"
-	@echo "... src/Position.o"
-	@echo "... src/Position.i"
-	@echo "... src/Position.s"
-	@echo "... src/ReversiGame.o"
-	@echo "... src/ReversiGame.i"
-	@echo "... src/ReversiGame.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... test/AIPlayerTest.o"
-	@echo "... test/AIPlayerTest.i"
-	@echo "... test/AIPlayerTest.s"
-	@echo "... test/BoardTest.o"
-	@echo "... test/BoardTest.i"
-	@echo "... test/BoardTest.s"
-	@echo "... test/ClassicLogicTest.o"
-	@echo "... test/ClassicLogicTest.i"
-	@echo "... test/ClassicLogicTest.s"
-	@echo "... test/main.o"
-	@echo "... test/main.i"
-	@echo "... test/main.s"
+	@echo "... src/client/src/AIPlayer.o"
+	@echo "... src/client/src/AIPlayer.i"
+	@echo "... src/client/src/AIPlayer.s"
+	@echo "... src/client/src/Board.o"
+	@echo "... src/client/src/Board.i"
+	@echo "... src/client/src/Board.s"
+	@echo "... src/client/src/ClassicLogic.o"
+	@echo "... src/client/src/ClassicLogic.i"
+	@echo "... src/client/src/ClassicLogic.s"
+	@echo "... src/client/src/ConfigParser.o"
+	@echo "... src/client/src/ConfigParser.i"
+	@echo "... src/client/src/ConfigParser.s"
+	@echo "... src/client/src/ConsolePrinter.o"
+	@echo "... src/client/src/ConsolePrinter.i"
+	@echo "... src/client/src/ConsolePrinter.s"
+	@echo "... src/client/src/HumanPlayer.o"
+	@echo "... src/client/src/HumanPlayer.i"
+	@echo "... src/client/src/HumanPlayer.s"
+	@echo "... src/client/src/Logic.o"
+	@echo "... src/client/src/Logic.i"
+	@echo "... src/client/src/Logic.s"
+	@echo "... src/client/src/OnlinePlayer.o"
+	@echo "... src/client/src/OnlinePlayer.i"
+	@echo "... src/client/src/OnlinePlayer.s"
+	@echo "... src/client/src/Player.o"
+	@echo "... src/client/src/Player.i"
+	@echo "... src/client/src/Player.s"
+	@echo "... src/client/src/Position.o"
+	@echo "... src/client/src/Position.i"
+	@echo "... src/client/src/Position.s"
+	@echo "... src/client/src/ReversiGame.o"
+	@echo "... src/client/src/ReversiGame.i"
+	@echo "... src/client/src/ReversiGame.s"
+	@echo "... src/client/src/main.o"
+	@echo "... src/client/src/main.i"
+	@echo "... src/client/src/main.s"
+	@echo "... src/client/test/AIPlayerTest.o"
+	@echo "... src/client/test/AIPlayerTest.i"
+	@echo "... src/client/test/AIPlayerTest.s"
+	@echo "... src/client/test/BoardTest.o"
+	@echo "... src/client/test/BoardTest.i"
+	@echo "... src/client/test/BoardTest.s"
+	@echo "... src/client/test/ClassicLogicTest.o"
+	@echo "... src/client/test/ClassicLogicTest.i"
+	@echo "... src/client/test/ClassicLogicTest.s"
+	@echo "... src/client/test/main.o"
+	@echo "... src/client/test/main.i"
+	@echo "... src/client/test/main.s"
+	@echo "... src/server/Server.o"
+	@echo "... src/server/Server.i"
+	@echo "... src/server/Server.s"
+	@echo "... src/server/main.o"
+	@echo "... src/server/main.i"
+	@echo "... src/server/main.s"
 .PHONY : help
 
 

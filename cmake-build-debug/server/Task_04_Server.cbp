@@ -64,9 +64,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/include/ConfigParser.h">
-			<Option target="Task_04_Server"/>
-		</Unit>
 		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/server/Server.cpp">
 			<Option target="Task_04_Server"/>
 		</Unit>
@@ -76,7 +73,10 @@
 		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/server/main.cpp">
 			<Option target="Task_04_Server"/>
 		</Unit>
-		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp">
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/client/include/ConfigParser.h">
+			<Option target="Task_04_Server"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp">
 			<Option target="Task_04_Server"/>
 		</Unit>
 		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/CMakeLists.txt">

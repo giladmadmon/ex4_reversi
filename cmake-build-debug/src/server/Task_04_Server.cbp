@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Task_04_Server"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\server\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Task_04_Server2">
+				<Option output="/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Task_04_Server2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 Task_04_Server2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Task_04_Server2/fast">
+				<Option output="/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Task_04_Server2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 Task_04_Server2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/client/include/ConfigParser.h">
+			<Option target="Task_04_Server2"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp">
+			<Option target="Task_04_Server2"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/Server.cpp">
+			<Option target="Task_04_Server2"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/Server.h">
+			<Option target="Task_04_Server2"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/main.cpp">
+			<Option target="Task_04_Server2"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\server\"/>
+		</Unit>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\server\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

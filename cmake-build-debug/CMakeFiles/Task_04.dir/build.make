@@ -57,324 +57,324 @@ include CMakeFiles/Task_04.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Task_04.dir/flags.make
 
-CMakeFiles/Task_04.dir/src/Position.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/Position.cpp.o: ../src/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task_04.dir/src/Position.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/Position.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Position.cpp
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o: ../src/client/src/Position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp
 
-CMakeFiles/Task_04.dir/src/Position.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/Position.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Position.cpp > CMakeFiles/Task_04.dir/src/Position.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/Position.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp > CMakeFiles/Task_04.dir/src/client/src/Position.cpp.i
 
-CMakeFiles/Task_04.dir/src/Position.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/Position.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Position.cpp -o CMakeFiles/Task_04.dir/src/Position.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/Position.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp -o CMakeFiles/Task_04.dir/src/client/src/Position.cpp.s
 
-CMakeFiles/Task_04.dir/src/Position.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/Position.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/Position.cpp.o.provides: CMakeFiles/Task_04.dir/src/Position.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Position.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/Position.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/Position.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/Position.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/Player.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task_04.dir/src/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/Player.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Player.cpp
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o: ../src/client/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/Player.cpp
 
-CMakeFiles/Task_04.dir/src/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Player.cpp > CMakeFiles/Task_04.dir/src/Player.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/Player.cpp > CMakeFiles/Task_04.dir/src/client/src/Player.cpp.i
 
-CMakeFiles/Task_04.dir/src/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Player.cpp -o CMakeFiles/Task_04.dir/src/Player.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/Player.cpp -o CMakeFiles/Task_04.dir/src/client/src/Player.cpp.s
 
-CMakeFiles/Task_04.dir/src/Player.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/Player.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/Player.cpp.o.provides: CMakeFiles/Task_04.dir/src/Player.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Player.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/Player.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/Player.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/Player.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o: ../src/HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/HumanPlayer.cpp
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o: ../src/client/src/HumanPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/HumanPlayer.cpp
 
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/HumanPlayer.cpp > CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/HumanPlayer.cpp > CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.i
 
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/HumanPlayer.cpp -o CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/HumanPlayer.cpp -o CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.s
 
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.provides: CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/Board.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task_04.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/Board.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Board.cpp
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o: ../src/client/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp
 
-CMakeFiles/Task_04.dir/src/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Board.cpp > CMakeFiles/Task_04.dir/src/Board.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp > CMakeFiles/Task_04.dir/src/client/src/Board.cpp.i
 
-CMakeFiles/Task_04.dir/src/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Board.cpp -o CMakeFiles/Task_04.dir/src/Board.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp -o CMakeFiles/Task_04.dir/src/client/src/Board.cpp.s
 
-CMakeFiles/Task_04.dir/src/Board.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/Board.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/Board.cpp.o.provides: CMakeFiles/Task_04.dir/src/Board.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Board.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/Board.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/Board.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/Board.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/Logic.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/Logic.cpp.o: ../src/Logic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Task_04.dir/src/Logic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/Logic.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/Logic.cpp
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o: ../src/client/src/Logic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/Logic.cpp
 
-CMakeFiles/Task_04.dir/src/Logic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/Logic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/Logic.cpp > CMakeFiles/Task_04.dir/src/Logic.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/Logic.cpp > CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.i
 
-CMakeFiles/Task_04.dir/src/Logic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/Logic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/Logic.cpp -o CMakeFiles/Task_04.dir/src/Logic.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/Logic.cpp -o CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.s
 
-CMakeFiles/Task_04.dir/src/Logic.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/Logic.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/Logic.cpp.o.provides: CMakeFiles/Task_04.dir/src/Logic.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/Logic.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/Logic.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/Logic.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/Logic.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o: ../src/ClassicLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ClassicLogic.cpp
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o: ../src/client/src/ClassicLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/ClassicLogic.cpp
 
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ClassicLogic.cpp > CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/ClassicLogic.cpp > CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.i
 
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ClassicLogic.cpp -o CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/ClassicLogic.cpp -o CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.s
 
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.provides: CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o: ../src/ReversiGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ReversiGame.cpp
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o: ../src/client/src/ReversiGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/ReversiGame.cpp
 
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/ReversiGame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ReversiGame.cpp > CMakeFiles/Task_04.dir/src/ReversiGame.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/ReversiGame.cpp > CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.i
 
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/ReversiGame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ReversiGame.cpp -o CMakeFiles/Task_04.dir/src/ReversiGame.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/ReversiGame.cpp -o CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.s
 
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.provides: CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o: ../src/ConsolePrinter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ConsolePrinter.cpp
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o: ../src/client/src/ConsolePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp
 
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ConsolePrinter.cpp > CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp > CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.i
 
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ConsolePrinter.cpp -o CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp -o CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.s
 
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.provides: CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/AIPlayer.cpp
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o: ../src/client/src/AIPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/AIPlayer.cpp
 
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/AIPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/AIPlayer.cpp > CMakeFiles/Task_04.dir/src/AIPlayer.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/AIPlayer.cpp > CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.i
 
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/AIPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/AIPlayer.cpp -o CMakeFiles/Task_04.dir/src/AIPlayer.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/AIPlayer.cpp -o CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.s
 
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.provides: CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o: ../src/OnlinePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/OnlinePlayer.cpp
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o: ../src/client/src/OnlinePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/OnlinePlayer.cpp
 
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/OnlinePlayer.cpp > CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/OnlinePlayer.cpp > CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.i
 
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/OnlinePlayer.cpp -o CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/OnlinePlayer.cpp -o CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.s
 
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.provides: CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o: ../src/ConfigParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o: ../src/client/src/ConfigParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp
 
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/ConfigParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp > CMakeFiles/Task_04.dir/src/ConfigParser.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp > CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.i
 
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/ConfigParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/ConfigParser.cpp -o CMakeFiles/Task_04.dir/src/ConfigParser.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp -o CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.s
 
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.provides: CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o
 
 
-CMakeFiles/Task_04.dir/src/main.cpp.o: CMakeFiles/Task_04.dir/flags.make
-CMakeFiles/Task_04.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Task_04.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/main.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/main.cpp
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.o: CMakeFiles/Task_04.dir/flags.make
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.o: ../src/client/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Task_04.dir/src/client/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04.dir/src/client/src/main.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/main.cpp
 
-CMakeFiles/Task_04.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/main.cpp > CMakeFiles/Task_04.dir/src/main.cpp.i
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04.dir/src/client/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/main.cpp > CMakeFiles/Task_04.dir/src/client/src/main.cpp.i
 
-CMakeFiles/Task_04.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/main.cpp -o CMakeFiles/Task_04.dir/src/main.cpp.s
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04.dir/src/client/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/main.cpp -o CMakeFiles/Task_04.dir/src/client/src/main.cpp.s
 
-CMakeFiles/Task_04.dir/src/main.cpp.o.requires:
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Task_04.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.requires
 
-CMakeFiles/Task_04.dir/src/main.cpp.o.provides: CMakeFiles/Task_04.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Task_04.dir/src/main.cpp.o.provides
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.provides: CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04.dir/build.make CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.provides
 
-CMakeFiles/Task_04.dir/src/main.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/main.cpp.o
+CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.provides.build: CMakeFiles/Task_04.dir/src/client/src/main.cpp.o
 
 
 # Object files for target Task_04
 Task_04_OBJECTS = \
-"CMakeFiles/Task_04.dir/src/Position.cpp.o" \
-"CMakeFiles/Task_04.dir/src/Player.cpp.o" \
-"CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o" \
-"CMakeFiles/Task_04.dir/src/Board.cpp.o" \
-"CMakeFiles/Task_04.dir/src/Logic.cpp.o" \
-"CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o" \
-"CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o" \
-"CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o" \
-"CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o" \
-"CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o" \
-"CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o" \
-"CMakeFiles/Task_04.dir/src/main.cpp.o"
+"CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o" \
+"CMakeFiles/Task_04.dir/src/client/src/main.cpp.o"
 
 # External object files for target Task_04
 Task_04_EXTERNAL_OBJECTS =
 
-Task_04: CMakeFiles/Task_04.dir/src/Position.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/Player.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/Board.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/Logic.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o
-Task_04: CMakeFiles/Task_04.dir/src/main.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o
+Task_04: CMakeFiles/Task_04.dir/src/client/src/main.cpp.o
 Task_04: CMakeFiles/Task_04.dir/build.make
 Task_04: CMakeFiles/Task_04.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Task_04"
@@ -385,18 +385,18 @@ CMakeFiles/Task_04.dir/build: Task_04
 
 .PHONY : CMakeFiles/Task_04.dir/build
 
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/Position.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/Player.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/HumanPlayer.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/Board.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/Logic.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/ClassicLogic.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/ReversiGame.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/ConsolePrinter.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/AIPlayer.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/OnlinePlayer.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/ConfigParser.cpp.o.requires
-CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/main.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/Position.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/Player.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/HumanPlayer.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/Board.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/Logic.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/ClassicLogic.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/ReversiGame.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/ConsolePrinter.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/AIPlayer.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/OnlinePlayer.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/ConfigParser.cpp.o.requires
+CMakeFiles/Task_04.dir/requires: CMakeFiles/Task_04.dir/src/client/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/Task_04.dir/requires
 

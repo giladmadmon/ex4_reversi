@@ -5,7 +5,7 @@
 		<Option title="googletest-distribution"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\server\;CMake Files\gtest_src\;CMake Files\gtest_src\googletest-release-1.8.0\;CMake Files\gtest_src\googletest-release-1.8.0\googlemock\;CMake Files\gtest_src\googletest-release-1.8.0\googletest\;CMake Files\gtest_src\googletest-release-1.8.0\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\server\;CMake Files\gtest_src\;CMake Files\gtest_src\googletest-release-1.8.0\;CMake Files\gtest_src\googletest-release-1.8.0\googlemock\;CMake Files\gtest_src\googletest-release-1.8.0\googletest\;CMake Files\gtest_src\googletest-release-1.8.0\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/gtest_src/googletest-release-1.8.0"/>
@@ -244,11 +244,11 @@
 		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/server/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\server\"/>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\server\"/>
 		</Unit>
-		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/server/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\server\"/>
+		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/src/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\server\"/>
 		</Unit>
 		<Unit filename="/home/gilad/CLionProjects/Task_04_Final/gtest_src/googletest-release-1.8.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\gtest_src\googletest-release-1.8.0\"/>

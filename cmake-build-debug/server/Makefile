@@ -198,32 +198,32 @@ Server.cpp.s:
 	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/Server.cpp.s
 .PHONY : Server.cpp.s
 
-__/src/ConfigParser.o: __/src/ConfigParser.cpp.o
+__/src/client/src/ConfigParser.o: __/src/client/src/ConfigParser.cpp.o
 
-.PHONY : __/src/ConfigParser.o
+.PHONY : __/src/client/src/ConfigParser.o
 
 # target to build an object file
-__/src/ConfigParser.cpp.o:
-	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.o
-.PHONY : __/src/ConfigParser.cpp.o
+__/src/client/src/ConfigParser.cpp.o:
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.o
+.PHONY : __/src/client/src/ConfigParser.cpp.o
 
-__/src/ConfigParser.i: __/src/ConfigParser.cpp.i
+__/src/client/src/ConfigParser.i: __/src/client/src/ConfigParser.cpp.i
 
-.PHONY : __/src/ConfigParser.i
+.PHONY : __/src/client/src/ConfigParser.i
 
 # target to preprocess a source file
-__/src/ConfigParser.cpp.i:
-	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.i
-.PHONY : __/src/ConfigParser.cpp.i
+__/src/client/src/ConfigParser.cpp.i:
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.i
+.PHONY : __/src/client/src/ConfigParser.cpp.i
 
-__/src/ConfigParser.s: __/src/ConfigParser.cpp.s
+__/src/client/src/ConfigParser.s: __/src/client/src/ConfigParser.cpp.s
 
-.PHONY : __/src/ConfigParser.s
+.PHONY : __/src/client/src/ConfigParser.s
 
 # target to generate assembly for a file
-__/src/ConfigParser.cpp.s:
-	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/ConfigParser.cpp.s
-.PHONY : __/src/ConfigParser.cpp.s
+__/src/client/src/ConfigParser.cpp.s:
+	cd /home/gilad/CLionProjects/Task_04_Final/cmake-build-debug && $(MAKE) -f server/CMakeFiles/Task_04_Server.dir/build.make server/CMakeFiles/Task_04_Server.dir/__/src/client/src/ConfigParser.cpp.s
+.PHONY : __/src/client/src/ConfigParser.cpp.s
 
 main.o: main.cpp.o
 
@@ -268,9 +268,9 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
-	@echo "... __/src/ConfigParser.o"
-	@echo "... __/src/ConfigParser.i"
-	@echo "... __/src/ConfigParser.s"
+	@echo "... __/src/client/src/ConfigParser.o"
+	@echo "... __/src/client/src/ConfigParser.i"
+	@echo "... __/src/client/src/ConfigParser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
