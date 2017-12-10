@@ -9,9 +9,11 @@
 
 #ifndef CLION_RUN
 #define CLION_RUN
-#define CONFIG_FILE_NAME "configuration_file.ini"
+#define SERVER_CONFIG_FILE_NAME "server_configuration.ini"
+#define CLIENT_CONFIG_FILE_NAME "client_configuration.ini"
 #else
-#define CONFIG_FILE_NAME "../exe/configuration_file.ini"
+#define SERVER_CONFIG_FILE_NAME "../exe/server_configuration.ini"
+#define CLIENT_CONFIG_FILE_NAME "../exe/client_configuration.ini"
 #endif
 
 #include <iostream>
@@ -20,14 +22,49 @@ using namespace std;
 
 class ConfigParser {
  public:
-  ConfigParser(string file_name = CONFIG_FILE_NAME);
+  /**
+   * Constructor
+   * @param file_name the name of the file..
+   */
+  ConfigParser(string file_name);
+
+  /**
+   * @return the IP address as a string.
+   */
   string GetIP();
+
+  /**
+   * @return the Port as an int.
+   */
   int GetPort();
 
  private:
+
+  /**
+   * Parse a file.
+   */
   int ParseFile();
+
+  /**
+   * Parse 1 line in the file.
+   * @param line the line.
+   */
   void ParseLine(const string &line);
+
+  /**
+   * Parse definition.
+   * @param def the given definition.
+   * @param line the line.
+   * @param variable the date written in the line as a string.
+   */
   void ParseDefinition(string def, const string &line, string &variable);
+
+  /**
+   * Parse definition.
+   * @param def the given definition.
+   * @param line the line.
+   * @param variable the date written in the line as an int.
+   */
   void ParseDefinition(string def, const string &line, int &variable);
 
   string ip_address_;

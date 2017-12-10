@@ -96,6 +96,54 @@ class ConsolePrinter : public Printer {
   * @param color the player who did the move
   */
   virtual void PrintAINoMove(PlayerColor color);
-};
 
+  /**
+  * Prints that we are waiting for other player's move
+  */
+  virtual void PrintWaiting();
+
+   /**
+   * Prints that we are connected and waiting for other player's to connect
+   */
+virtual void PrintConnection();
+
+  /**
+   * Prints that the server in on air
+   */
+  virtual void PrintServer();
+
+  /**
+   * Prints that the server is waiting for connection
+   */
+  virtual void PrintWaitingServer();
+
+  /**
+   * Prints that the server had an error telling the clients who turn it is
+   */
+  virtual void PrintErrorServerTurns();
+
+  /**
+   * Prints that the first client connected to server
+   */
+  virtual void PrintFirstConnection();
+
+  /**
+   * Prints that the second client connected to server
+   */
+  virtual void PrintSecondConnection();
+
+
+  /**
+   * Prints that there was an error reading the message
+   */
+  virtual void PrintErrorReadMsg();
+
+  /**
+   * Prints that the client disconnected to server
+   */
+  virtual void PrintClientDisconnected();
+  virtual void PrintMenu();
+  virtual void PrintWrongMenuInput();
+
+};
 #endif //ASS2_CONSOLE_PRINTER_H

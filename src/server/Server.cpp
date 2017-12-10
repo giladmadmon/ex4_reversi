@@ -8,16 +8,16 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
-#include <string>
 #include <string.h>
 #include <iostream>
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
 #define BUFFER_SIZE 7
 
-Server::Server(int port) : port(port), serverSocket(0) {
-  cout << "server" << endl;
+Server::Server(int port, Printer &printer) : port(port), serverSocket(0), printer_(printer) {
+  printer.PrintServer();
 }
+
 void Server::Start() {
   // Create a socket point
   serverSocket = socket(AF_INET, SOCK_STREAM, 0);
@@ -43,7 +43,7 @@ void Server::Play() {
   int n, firstClientSocket, secondClientSocket;
 
   while (true) {
-    cout << "Waiting for clients connections..." << endl;
+    printer_.PrintWaitingServer();
 
     n = ConnectClients(firstClientSocket, secondClientSocket);
     if (n == 0) {
@@ -52,12 +52,12 @@ void Server::Play() {
 
     n = TellTurn(firstClientSocket, secondClientSocket);
     if (n == 0) {
-      cout << "Error writing to socket who's turn it is." << endl;
+      printer_.PrintErrorServerTurns();
     }
 
     GameStatus status = PLAYING;
     int currentClient = firstClientSocket, otherClient = secondClientSocket;
-    while (status != GAME_ENDED) {
+    while (status != GAME_ENDED && status !=CLIENT_DISCONNECTED) {
       status = PlayOneTurn(currentClient, otherClient);
 
       switch (status) {
@@ -65,8 +65,10 @@ void Server::Play() {
         case NO_MOVE:
         case PLAYING:SwapClients(currentClient, otherClient);
           break;
+        case CLIENT_DISCONNECTED:
         case GAME_ENDED:break;
       }
+
     }
 
     // Close communication with the client
@@ -88,14 +90,14 @@ int Server::ConnectClients(int &firstClientSocket, int &secondClientSocket) {
 
 // Accept a new client connection
   firstClientSocket = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
-  cout << "First client connected" << endl;
+  printer_.PrintFirstConnection();
   if (firstClientSocket == -1) {
     return 0;
   }
 
   // Accept a new client connection
   secondClientSocket = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
-  cout << "Second client connected" << endl;
+  printer_.PrintSecondConnection();
   if (secondClientSocket == -1) {
     return 0;
   }
@@ -122,20 +124,18 @@ int Server::TellTurn(int firstClientSocket, int secondClientSocket) {
 
 GameStatus Server::PlayOneTurn(int currentClient, int otherClient) {
   int n;
-  char msg[7];
+  char msg[BUFFER_SIZE];
   GameStatus status;
 
   n = read(currentClient, &msg, sizeof(msg));
   if (n == -1) {
-    cout << "Error reading message" << endl;
+    printer_.PrintErrorReadMsg();
     return ERROR;
   }
   if (n == 0) {
-    cout << "Client disconnected" << endl;
-    return ERROR;
+    printer_.PrintClientDisconnected();
+    return CLIENT_DISCONNECTED;
   }
-
-  cout << msg << endl;
 
   if (strcmp(reinterpret_cast<const char *>(&msg), "NoMove") == 0) {
     status = NO_MOVE;
@@ -148,15 +148,28 @@ GameStatus Server::PlayOneTurn(int currentClient, int otherClient) {
 
   n = write(otherClient, &msg, sizeof(msg));
   if (n == -1) {
-    cout << "Error reading message" << endl;
+    printer_.PrintErrorReadMsg();
     return ERROR;
   }
   if (n == 0) {
-    cout << "Client disconnected" << endl;
-    return ERROR;
+    printer_.PrintClientDisconnected();
+
+    return CLIENT_DISCONNECTED;
   }
 
+  PrintStatus(status,msg);
   return status;
+}
+
+void Server::PrintStatus(GameStatus status, char msg[7]) {
+  switch(status){
+
+    case NO_MOVE: cout << "Game status: no moves " << endl; break;
+    case GAME_ENDED:cout << "Game status: Game ended " << endl; break;
+    case CLIENT_DISCONNECTED:cout << "Game status: " << msg << endl; break;
+    case PLAYING:cout << "Move: (" << msg << ")" << endl; break;
+    case ERROR:break;
+  }
 }
 
 void Server::Stop() {

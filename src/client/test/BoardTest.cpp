@@ -5,7 +5,7 @@
 **************/
 
 #include "gtest/gtest.h"
-#include "../../include/Board.h"
+#include "../include/Board.h"
 using namespace std;
 
 class BoardTest : public testing::Test {

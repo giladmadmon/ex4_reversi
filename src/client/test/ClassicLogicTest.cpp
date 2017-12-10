@@ -7,9 +7,8 @@
 #include <vector>
 #include <algorithm>
 #include "gtest/gtest.h"
-#include "../../include/ClassicLogic.h"
 #include "BoardStates.h"
-#include "../../include/ConsolePrinter.h"
+#include "../include/ClassicLogic.h"
 
 using namespace std;
 

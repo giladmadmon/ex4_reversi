@@ -16,10 +16,9 @@ class OnlinePlayer : public Player {
  public:
   /**
    * Constructor.
-   *
    * @param name the name of the player.
    */
-  OnlinePlayer(const char *serverIP, int serverPort, string name = "");
+  OnlinePlayer(const char *serverIP, int serverPort);
   /**
    * Asks the player to make a move.
    *
@@ -28,8 +27,17 @@ class OnlinePlayer : public Player {
    * @return the chosen position of the player.
    */
   virtual Position MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[7]);
+
+  /**
+   * @return the player color.
+   */
   virtual PlayerColor GetColor();
-  void connectToServer();
+
+  /**
+   * Connect the player to rhe server.
+   * @param printer the printer used to print messages along the connection process.
+   */
+  void connectToServer(Printer &printer);
  private:
   const char *server_IP;
   int server_port;

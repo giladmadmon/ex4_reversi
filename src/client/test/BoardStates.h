@@ -5,9 +5,9 @@
 **************/
 
 #include <vector>
-#include "../../include/PlayerColor.h"
-#include "../../include/Board.h"
-#include "../../include/Position.h"
+#include "../include/PlayerColor.h"
+#include "../include/Board.h"
+#include "../include/Position.h"
 
 using namespace ::std;
 

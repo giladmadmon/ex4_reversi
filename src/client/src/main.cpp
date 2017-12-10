@@ -18,26 +18,25 @@
 #define MAX_OPTION 3
 #define MIN_OPTION 1
 
-void StartGameWhite(const Player &other_player, Board &board, Logic &logic);
-void StartGameBlack(const Player &other_player, Board &board, Logic &logic);
+void StartGame(Player &black, Player &white, Logic &logic, Board &board, Printer &printer);
 
 int main() {
+  Board board;
+  ConsolePrinter printer;
+  HumanPlayer this_player;
+  ClassicLogic logic;
+  ConfigParser config_parser(CLIENT_CONFIG_FILE_NAME);
+
   int option;
   bool valid;
-  Board board;
-  ClassicLogic logic;
-  ConfigParser config_parser;
 
-  cout << "Hello! who would you like to play Reversi with?:)" << endl;
-  cout << "(1) Your Friend. " << endl;
-  cout << "(2) The computer. " << endl;
-  cout << "(3) Remote player. " << endl;
+  printer.PrintMenu();
 
   do {
     cin >> option;
 
     if (option < MIN_OPTION || option > MAX_OPTION) {
-      cout << "wrong input, try again" << endl;
+      printer.PrintWrongMenuInput();
     }
 
     if (cin.good()) {
@@ -49,40 +48,34 @@ int main() {
   } while (!valid || (option < MIN_OPTION || option > MAX_OPTION));
 
   switch (option) {
-    case 1:StartGameWhite(HumanPlayer(), board, logic);
+    case 1: {
+      HumanPlayer other_human_player = HumanPlayer();
+      StartGame(this_player, other_human_player, logic, board, printer);
       break;
-    case 2:StartGameWhite(AIPlayer(board, logic), board, logic);
+    }
+    case 2: {
+      AIPlayer other_AI_player = AIPlayer(board, logic);
+      StartGame(this_player, other_AI_player, logic, board, printer);
       break;
-    case 3:OnlinePlayer online_player = OnlinePlayer(config_parser.GetIP().c_str(), config_parser.GetPort());
+    }
+    case 3: {
+      OnlinePlayer online_player = OnlinePlayer(config_parser.GetIP().c_str(), config_parser.GetPort());
 
-      online_player.connectToServer();
+      online_player.connectToServer(printer);
 
-      if (online_player.GetColor() == Black) {
-        StartGameBlack(online_player, board, logic);
+      if (online_player.GetColor() == White) {
+        StartGame(this_player, online_player, logic, board, printer);
       } else {
-        StartGameWhite(online_player, board, logic);
+        StartGame(online_player, this_player, logic, board, printer);
       }
 
       break;
+    }
   }
 }
 
-void StartGameWhite(const Player &other_player, Board &board, Logic &logic) {
-  ConsolePrinter printer;
-  HumanPlayer this_player;
-  AIPlayer whiteAI(board, logic);
-
-  ReversiGame game(this_player, const_cast<Player &>(other_player), logic, board, printer);
-
-  game.PlayGame();
-}
-
-void StartGameBlack(const Player &other_player, Board &board, Logic &logic) {
-  ConsolePrinter printer;
-  HumanPlayer this_player;
-  AIPlayer whiteAI(board, logic);
-
-  ReversiGame game(const_cast<Player &>(other_player), this_player, logic, board, printer);
+void StartGame(Player &black, Player &white, Logic &logic, Board &board, Printer &printer) {
+  ReversiGame game(black, white, logic, board, printer);
 
   game.PlayGame();
 }

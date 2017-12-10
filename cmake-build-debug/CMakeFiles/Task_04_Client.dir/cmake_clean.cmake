@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.o"
-  "CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.o"
   "CMakeFiles/Task_04_Client.dir/src/client/src/HumanPlayer.cpp.o"
   "CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.o"
   "CMakeFiles/Task_04_Client.dir/src/client/src/Logic.cpp.o"

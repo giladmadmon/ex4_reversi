@@ -105,9 +105,81 @@ CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o.provides: CMakeF
 CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o.provides.build: CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o
 
 
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o: CMakeFiles/Task_04_Server.dir/flags.make
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o: ../src/client/src/ConsolePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp
+
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp > CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.i
+
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp -o CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.s
+
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.requires:
+
+.PHONY : CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.requires
+
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.provides: CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.provides
+
+CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.provides.build: CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o
+
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o: CMakeFiles/Task_04_Server.dir/flags.make
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o: ../src/client/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp > CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.i
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp -o CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.s
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.requires:
+
+.PHONY : CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.requires
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.provides: CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.provides
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.provides.build: CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o
+
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o: CMakeFiles/Task_04_Server.dir/flags.make
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o: ../src/client/src/Position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp > CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.i
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp -o CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.s
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.requires:
+
+.PHONY : CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.requires
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.provides: CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.provides.build
+.PHONY : CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.provides
+
+CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.provides.build: CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o
+
+
 CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o: CMakeFiles/Task_04_Server.dir/flags.make
 CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o: ../src/server/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o -c /home/gilad/CLionProjects/Task_04_Final/src/server/main.cpp
 
 CMakeFiles/Task_04_Server.dir/src/server/main.cpp.i: cmake_force
@@ -133,6 +205,9 @@ CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o.provides.build: CMakeFiles/T
 Task_04_Server_OBJECTS = \
 "CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.o" \
 "CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o" \
+"CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o" \
+"CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o" \
+"CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o" \
 "CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o"
 
 # External object files for target Task_04_Server
@@ -140,10 +215,13 @@ Task_04_Server_EXTERNAL_OBJECTS =
 
 Task_04_Server: CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.o
 Task_04_Server: CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o
+Task_04_Server: CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o
+Task_04_Server: CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o
+Task_04_Server: CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o
 Task_04_Server: CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o
 Task_04_Server: CMakeFiles/Task_04_Server.dir/build.make
 Task_04_Server: CMakeFiles/Task_04_Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Task_04_Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Task_04_Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Task_04_Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +231,9 @@ CMakeFiles/Task_04_Server.dir/build: Task_04_Server
 
 CMakeFiles/Task_04_Server.dir/requires: CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.o.requires
 CMakeFiles/Task_04_Server.dir/requires: CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o.requires
+CMakeFiles/Task_04_Server.dir/requires: CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o.requires
+CMakeFiles/Task_04_Server.dir/requires: CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o.requires
+CMakeFiles/Task_04_Server.dir/requires: CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o.requires
 CMakeFiles/Task_04_Server.dir/requires: CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o.requires
 
 .PHONY : CMakeFiles/Task_04_Server.dir/requires

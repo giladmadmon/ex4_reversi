@@ -48,7 +48,7 @@ void ConsolePrinter::PrintNoMoves(PlayerColor color) {
 }
 
 void ConsolePrinter::PrintCurrentTurn(PlayerColor color) {
-  cout << (char) color << " -- its your turn!" << endl;
+  cout << (char) color << " turn!" << endl;
 }
 
 void ConsolePrinter::PrintEnterRow() {
@@ -75,9 +75,57 @@ void ConsolePrinter::PrintScore(int black_score, int white_score) {
   cout << "There are " << black_score << " " << (char) Black << " tools." << endl
        << "There are " << white_score << " " << (char) White << " tools." << endl;
 }
+
 void ConsolePrinter::PrintMove(Position &position, PlayerColor color) {
   cout << (char) color << " played: (" << position.GetRow() << "," << position.GetColumn() << ")" << endl;
 }
+
 void ConsolePrinter::PrintAINoMove(PlayerColor color) {
   cout << (char) color << " had no move." << endl;
+}
+
+void ConsolePrinter::PrintWaiting() {
+  cout << "Waiting for other player's move.." << endl;
+}
+
+void ConsolePrinter::PrintConnection() {
+  cout << "Connected to server" << endl;
+  cout << "Waiting for other player to join.." << endl;
+}
+
+void ConsolePrinter::PrintServer() {
+  cout << "server" << endl;
+}
+
+void ConsolePrinter::PrintWaitingServer() {
+  cout << "Waiting for clients connections..." << endl;
+}
+
+void ConsolePrinter::PrintErrorServerTurns() {
+  cout << "Error writing to socket who's turn it is." << endl;
+}
+
+void ConsolePrinter::PrintFirstConnection() {
+  cout << "First client connected" << endl;
+}
+
+void ConsolePrinter::PrintSecondConnection() {
+  cout << "Second client connected" << endl;
+}
+
+void ConsolePrinter::PrintErrorReadMsg() {
+  cout << "Error reading message" << endl;
+}
+
+void ConsolePrinter::PrintClientDisconnected() {
+  cout << "Client disconnected" << endl;
+}
+void ConsolePrinter::PrintMenu() {
+  cout << "Hello! who would you like to play Reversi with?:)" << endl;
+  cout << "(1) Your Friend. " << endl;
+  cout << "(2) The computer. " << endl;
+  cout << "(3) Remote player. " << endl;
+}
+void ConsolePrinter::PrintWrongMenuInput() {
+  cout << "wrong input, try again" << endl;
 }

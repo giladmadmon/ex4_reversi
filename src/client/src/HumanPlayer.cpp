@@ -42,8 +42,6 @@ int HumanPlayer::KeyboardHit() {
   return 0;
 }
 
-HumanPlayer::HumanPlayer(string name) : Player(name) {}
-
 int GetIntFromUser(Printer &printer) {
   int input = -1;
   bool valid = false;
@@ -74,6 +72,8 @@ Position HumanPlayer::MakeAMove(vector<Position> &possible_moves, Printer &print
   }
 
   if (possible_moves.size() > 0) {
+    printer.PrintCurrentTurn(color);
+
     do {
       Position position(0, 0);
 

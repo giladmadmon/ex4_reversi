@@ -28,7 +28,6 @@ void ReversiGame::PlayOneTurn() {
   Player *current_player = GetPlayer(current_turn);
 
   printer_.PrintBoard(board_);
-  printer_.PrintCurrentTurn(current_turn);
 
   if (possible_moves.empty()) {
     current_player->MakeAMove(possible_moves, printer_, current_turn, msg);

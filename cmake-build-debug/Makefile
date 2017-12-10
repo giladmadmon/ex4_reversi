@@ -283,6 +283,7 @@ src/client/src/Board.o: src/client/src/Board.cpp.o
 
 # target to build an object file
 src/client/src/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Board.cpp.o
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.o
 .PHONY : src/client/src/Board.cpp.o
@@ -293,6 +294,7 @@ src/client/src/Board.i: src/client/src/Board.cpp.i
 
 # target to preprocess a source file
 src/client/src/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.i
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Board.cpp.i
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.i
 .PHONY : src/client/src/Board.cpp.i
@@ -303,6 +305,7 @@ src/client/src/Board.s: src/client/src/Board.cpp.s
 
 # target to generate assembly for a file
 src/client/src/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.s
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Board.cpp.s
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Board.cpp.s
 .PHONY : src/client/src/Board.cpp.s
@@ -376,6 +379,7 @@ src/client/src/ConsolePrinter.o: src/client/src/ConsolePrinter.cpp.o
 
 # target to build an object file
 src/client/src/ConsolePrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConsolePrinter.cpp.o
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConsolePrinter.cpp.o
 .PHONY : src/client/src/ConsolePrinter.cpp.o
@@ -386,6 +390,7 @@ src/client/src/ConsolePrinter.i: src/client/src/ConsolePrinter.cpp.i
 
 # target to preprocess a source file
 src/client/src/ConsolePrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.i
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConsolePrinter.cpp.i
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConsolePrinter.cpp.i
 .PHONY : src/client/src/ConsolePrinter.cpp.i
@@ -396,6 +401,7 @@ src/client/src/ConsolePrinter.s: src/client/src/ConsolePrinter.cpp.s
 
 # target to generate assembly for a file
 src/client/src/ConsolePrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.s
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/ConsolePrinter.cpp.s
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/ConsolePrinter.cpp.s
 .PHONY : src/client/src/ConsolePrinter.cpp.s
@@ -490,42 +496,13 @@ src/client/src/OnlinePlayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/OnlinePlayer.cpp.s
 .PHONY : src/client/src/OnlinePlayer.cpp.s
 
-src/client/src/Player.o: src/client/src/Player.cpp.o
-
-.PHONY : src/client/src/Player.o
-
-# target to build an object file
-src/client/src/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.o
-	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.o
-.PHONY : src/client/src/Player.cpp.o
-
-src/client/src/Player.i: src/client/src/Player.cpp.i
-
-.PHONY : src/client/src/Player.i
-
-# target to preprocess a source file
-src/client/src/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.i
-	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.i
-.PHONY : src/client/src/Player.cpp.i
-
-src/client/src/Player.s: src/client/src/Player.cpp.s
-
-.PHONY : src/client/src/Player.s
-
-# target to generate assembly for a file
-src/client/src/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.s
-	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Player.cpp.s
-.PHONY : src/client/src/Player.cpp.s
-
 src/client/src/Position.o: src/client/src/Position.cpp.o
 
 .PHONY : src/client/src/Position.o
 
 # target to build an object file
 src/client/src/Position.cpp.o:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.o
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.o
 .PHONY : src/client/src/Position.cpp.o
@@ -536,6 +513,7 @@ src/client/src/Position.i: src/client/src/Position.cpp.i
 
 # target to preprocess a source file
 src/client/src/Position.cpp.i:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.i
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.i
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.i
 .PHONY : src/client/src/Position.cpp.i
@@ -546,6 +524,7 @@ src/client/src/Position.s: src/client/src/Position.cpp.s
 
 # target to generate assembly for a file
 src/client/src/Position.cpp.s:
+	$(MAKE) -f CMakeFiles/Task_04_Server.dir/build.make CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.s
 	$(MAKE) -f CMakeFiles/Task_04_Tests.dir/build.make CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.s
 	$(MAKE) -f CMakeFiles/Task_04_Client.dir/build.make CMakeFiles/Task_04_Client.dir/src/client/src/Position.cpp.s
 .PHONY : src/client/src/Position.cpp.s
@@ -812,9 +791,6 @@ help:
 	@echo "... src/client/src/OnlinePlayer.o"
 	@echo "... src/client/src/OnlinePlayer.i"
 	@echo "... src/client/src/OnlinePlayer.s"
-	@echo "... src/client/src/Player.o"
-	@echo "... src/client/src/Player.i"
-	@echo "... src/client/src/Player.s"
 	@echo "... src/client/src/Position.o"
 	@echo "... src/client/src/Position.i"
 	@echo "... src/client/src/Position.s"

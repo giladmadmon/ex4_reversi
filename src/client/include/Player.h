@@ -14,16 +14,6 @@ using namespace std;
 class Player {
  public:
   /**
-   * Constructor.
-   *
-   * @param name the name of the player.
-   */
-  Player(string &name);
-  /**
-   * @return the name of the player.
-   */
-  virtual string GetName();
-  /**
    * Asks the player to make a move.
    *
    * @param possible_moves the player possible moves.
@@ -35,8 +25,6 @@ class Player {
                              PlayerColor color,
                              char (&msg)[7]) = 0;
 
- private:
-  string name_;
 };
 
 #endif //TASK_02_BASEPLAYER_H

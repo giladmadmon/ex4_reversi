@@ -20,12 +20,12 @@ using namespace std;
 
 #define MOVE_DELIMITER ", "
 
-OnlinePlayer::OnlinePlayer(const char *serverIP, int serverPort, string name)
-    : Player(name), server_IP(serverIP), server_port(serverPort), client_socket(0), color(NoColor) {
+OnlinePlayer::OnlinePlayer(const char *serverIP, int serverPort)
+    : server_IP(serverIP), server_port(serverPort), client_socket(0), color(NoColor) {
   cout << "Client" << endl;
 }
 
-void OnlinePlayer::connectToServer() {
+void OnlinePlayer::connectToServer(Printer &printer) {
   // Create a socket point
   client_socket = socket(AF_INET, SOCK_STREAM, 0);
   if (client_socket == -1) {
@@ -53,7 +53,8 @@ void OnlinePlayer::connectToServer() {
   if (connect(client_socket, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) == -1) {
     throw "Error connecting to server";
   }
-  cout << "Connected to server" << endl;
+  printer.PrintConnection();
+
 }
 
 Position OnlinePlayer::MakeAMove(vector<Position> &possible_moves,
@@ -69,6 +70,7 @@ Position OnlinePlayer::MakeAMove(vector<Position> &possible_moves,
       return Position(-1, -1);
     }
   }
+  printer.PrintWaiting();
 
   n = read(client_socket, &msg, sizeof(msg));
   if (n == -1) {

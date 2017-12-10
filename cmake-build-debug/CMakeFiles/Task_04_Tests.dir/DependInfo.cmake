@@ -12,7 +12,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gilad/CLionProjects/Task_04_Final/src/client/src/HumanPlayer.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/src/HumanPlayer.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/client/src/Logic.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/src/Logic.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/client/src/OnlinePlayer.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/src/OnlinePlayer.cpp.o"
-  "/home/gilad/CLionProjects/Task_04_Final/src/client/src/Player.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/src/Player.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/src/Position.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/client/src/ReversiGame.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/src/ReversiGame.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/client/test/AIPlayerTest.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Tests.dir/src/client/test/AIPlayerTest.cpp.o"

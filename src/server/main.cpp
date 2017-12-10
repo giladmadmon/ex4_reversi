@@ -11,9 +11,10 @@
 using namespace std;
 
 int main() {
-  ConfigParser config_parser;
+  ConfigParser config_parser(SERVER_CONFIG_FILE_NAME);
+  ConsolePrinter printer;
 
-  Server server(config_parser.GetPort());
+  Server server(config_parser.GetPort(), printer);
 
   try {
     server.Start();

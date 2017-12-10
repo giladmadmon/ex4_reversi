@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/gilad/CLionProjects/Task_04_Final/src/client/src/Board.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Server.dir/src/client/src/Board.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/client/src/ConfigParser.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Server.dir/src/client/src/ConfigParser.cpp.o"
+  "/home/gilad/CLionProjects/Task_04_Final/src/client/src/ConsolePrinter.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Server.dir/src/client/src/ConsolePrinter.cpp.o"
+  "/home/gilad/CLionProjects/Task_04_Final/src/client/src/Position.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Server.dir/src/client/src/Position.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/server/Server.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Server.dir/src/server/Server.cpp.o"
   "/home/gilad/CLionProjects/Task_04_Final/src/server/main.cpp" "/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/CMakeFiles/Task_04_Server.dir/src/server/main.cpp.o"
   )

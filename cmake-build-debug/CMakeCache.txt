@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Task_04_All
+CMAKE_PROJECT_NAME:STATIC=Task_04_Final
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -198,6 +198,12 @@ Task_04_All_SOURCE_DIR:STATIC=/home/gilad/CLionProjects/Task_04_Final
 
 //Value Computed by CMake
 Task_04_BINARY_DIR:STATIC=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug/server
+
+//Value Computed by CMake
+Task_04_Final_BINARY_DIR:STATIC=/home/gilad/CLionProjects/Task_04_Final/cmake-build-debug
+
+//Value Computed by CMake
+Task_04_Final_SOURCE_DIR:STATIC=/home/gilad/CLionProjects/Task_04_Final
 
 //Value Computed by CMake
 Task_04_SOURCE_DIR:STATIC=/home/gilad/CLionProjects/Task_04_Final/server

@@ -9,9 +9,7 @@
 #include <cstdlib>
 #include <cstdio>
 
-AIPlayer::AIPlayer(Board &board, Logic &logic, string name) : Player(name), board_(board), logic_(logic) {
-
-}
+AIPlayer::AIPlayer(Board &board, Logic &logic) : board_(board), logic_(logic) {}
 
 int AIPlayer::GetGrade(Position &position, Board board, PlayerColor color) {
   PlayerColor player_color = color;
