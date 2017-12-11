@@ -1,7 +1,7 @@
 /**************
 * Student name: Gilad Madmon
 * Student name: Dafna Magid
-* Exercise name: Exercise 3
+* Exercise name: Exercise 4
 **************/
 
 #ifndef TASK_02_HUMANPLAYER_H
@@ -29,7 +29,7 @@ class HumanPlayer : public Player {
    * @param printer the printer in order to communicate with the player.
    * @return the chosen position of the player.
    */
-  virtual Position MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[7]);
+  virtual Position MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[MAX_BUFFER_SIZE]);
 
  private:
   int KeyboardHit();

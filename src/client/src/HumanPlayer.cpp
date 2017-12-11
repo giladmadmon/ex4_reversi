@@ -1,7 +1,7 @@
 /**************
 * Student name: Gilad Madmon
 * Student name: Dafna Magid
-* Exercise name: Exercise 3
+* Exercise name: Exercise 4
 **************/
 
 #include <limits>
@@ -62,7 +62,7 @@ int GetIntFromUser(Printer &printer) {
   return input;
 }
 
-Position HumanPlayer::MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[7]) {
+Position HumanPlayer::MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[MAX_BUFFER_SIZE]) {
   int chosen_row, chosen_column;
   bool valid = false;
   ostringstream convert;

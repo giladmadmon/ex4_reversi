@@ -1,7 +1,7 @@
 /**************
 * Student name: Gilad Madmon
 * Student name: Dafna Magid
-* Exercise name: Exercise 3
+* Exercise name: Exercise 4
 **************/
 
 #include "../include/Board.h"
@@ -35,7 +35,7 @@ int AIPlayer::GetTokensDifference(Position &position, PlayerColor color, Board b
   return board.CountColor(color) - board.CountColor(OtherColor(color));
 }
 
-Position AIPlayer::MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[7]) {
+Position AIPlayer::MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[MAX_BUFFER_SIZE]) {
   if (possible_moves.size() > 0) {
     vector<Position> min_positions;
     int min_grade = INT_MAX;

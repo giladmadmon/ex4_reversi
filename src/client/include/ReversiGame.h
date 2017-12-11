@@ -1,7 +1,7 @@
 /**************
 * Student name: Gilad Madmon
 * Student name: Dafna Magid
-* Exercise name: Exercise 3
+* Exercise name: Exercise 4
 **************/
 
 #ifndef TASK_02_REVERSIGAME_H
@@ -18,7 +18,7 @@ class ReversiGame {
   Board &board_;
   Printer &printer_;
   bool new_game_;
-  char msg[7];
+  char msg[MAX_BUFFER_SIZE];
  public:
   /**
    * Constructor.

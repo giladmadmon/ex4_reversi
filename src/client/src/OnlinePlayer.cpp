@@ -60,7 +60,7 @@ void OnlinePlayer::connectToServer(Printer &printer) {
 Position OnlinePlayer::MakeAMove(vector<Position> &possible_moves,
                                  Printer &printer,
                                  PlayerColor color,
-                                 char (&msg)[7]) {
+                                 char (&msg)[MAX_BUFFER_SIZE]) {
   int chosen_row = -1, chosen_column = -1;
   int n;
 

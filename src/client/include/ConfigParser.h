@@ -1,7 +1,7 @@
 /**************
 * Student name: Gilad Madmon
 * Student name: Dafna Magid
-* Exercise name: Exercise 3
+* Exercise name: Exercise 4
 **************/
 
 #ifndef TASK_04_ALL_CONFIGPARSER_H

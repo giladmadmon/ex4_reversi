@@ -26,7 +26,7 @@ class OnlinePlayer : public Player {
    * @param printer the printer in order to communicate with the player.
    * @return the chosen position of the player.
    */
-  virtual Position MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[7]);
+  virtual Position MakeAMove(vector<Position> &possible_moves, Printer &printer, PlayerColor color, char (&msg)[MAX_BUFFER_SIZE]);
 
   /**
    * @return the player color.

@@ -1,11 +1,13 @@
 /**************
 * Student name: Gilad Madmon
 * Student name: Dafna Magid
-* Exercise name: Exercise 3
+* Exercise name: Exercise 4
 **************/
 
 #ifndef TASK_02_BASEPLAYER_H
 #define TASK_02_BASEPLAYER_H
+
+#define MAX_BUFFER_SIZE 7
 
 #include <iostream>
 #include "Player.h"
@@ -23,7 +25,7 @@ class Player {
   virtual Position MakeAMove(vector<Position> &possible_moves,
                              Printer &printer,
                              PlayerColor color,
-                             char (&msg)[7]) = 0;
+                             char (&msg)[MAX_BUFFER_SIZE]) = 0;
 
 };
 

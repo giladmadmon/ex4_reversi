@@ -12,7 +12,6 @@
 #include <iostream>
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
-#define BUFFER_SIZE 7
 
 Server::Server(int port, Printer &printer) : port(port), serverSocket(0), printer_(printer) {
   printer.PrintServer();
@@ -124,7 +123,7 @@ int Server::TellTurn(int firstClientSocket, int secondClientSocket) {
 
 GameStatus Server::PlayOneTurn(int currentClient, int otherClient) {
   int n;
-  char msg[BUFFER_SIZE];
+  char msg[MAX_BUFFER_SIZE];
   GameStatus status;
 
   n = read(currentClient, &msg, sizeof(msg));
@@ -161,7 +160,7 @@ GameStatus Server::PlayOneTurn(int currentClient, int otherClient) {
   return status;
 }
 
-void Server::PrintStatus(GameStatus status, char msg[7]) {
+void Server::PrintStatus(GameStatus status, char msg[MAX_BUFFER_SIZE]) {
   switch(status){
 
     case NO_MOVE: cout << "Game status: no moves " << endl; break;
